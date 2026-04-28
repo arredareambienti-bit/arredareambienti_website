@@ -72,30 +72,7 @@
 .right {
   position: relative;
   overflow: hidden;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 8s ease;
-}
-
-.right:hover .image { transform: scale(1.04); }
-
-.badge {
-  position: absolute;
-  bottom: 56px;
-  left: -24px;
-  background: var(--white);
-  padding: 20px 28px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-lg);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  animation: fadeUp 0.8s ease both 0.6s;
+  background: #000;
 }
 
 .badgeNumber {
@@ -119,23 +96,36 @@
   right: 32px;
   width: 1px;
   height: 80px;
-  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.4), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4), transparent);
 }
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
+  .hero {
+    grid-template-columns: 1fr;
+  }
 
   .left {
     padding: 120px 24px 64px;
     justify-content: center;
   }
 
-  .content { max-width: 100%; text-align: center; }
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
 
-  .ctas { justify-content: center; }
+  .ctas {
+    justify-content: center;
+  }
 
-  .right { height: 55vw; min-height: 320px; }
+  .right {
+    height: 55vw;
+    min-height: 320px;
+  }
 
-  .badge { left: 24px; bottom: 24px; }
+  .badge {
+    left: 24px;
+    bottom: 24px;
+  }
 }
