@@ -1,0 +1,31 @@
+.header { max-width: 600px; }
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}

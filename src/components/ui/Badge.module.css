@@ -1,0 +1,30 @@
+.badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  line-height: 1;
+}
+
+.default {
+  background: var(--tan-light);
+  color: var(--brown);
+}
+
+.dark {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.sale {
+  background: #C0392B;
+  color: var(--white);
+}
+
+.new {
+  background: #27AE60;
+  color: var(--white);
+}

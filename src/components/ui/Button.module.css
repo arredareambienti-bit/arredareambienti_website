@@ -1,0 +1,65 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition), color var(--transition),
+    border-color var(--transition), box-shadow var(--transition),
+    transform var(--transition);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn:active { transform: scale(0.97) !important; }
+
+/* --- Sizes --- */
+.sm  { font-size: 0.8rem;   padding: 9px 20px; }
+.md  { font-size: 0.875rem; padding: 13px 28px; }
+.lg  { font-size: 1rem;     padding: 16px 36px; }
+
+/* --- Variants --- */
+.primary {
+  background: var(--brown);
+  color: var(--white);
+  border: 1.5px solid var(--brown);
+}
+.primary:hover {
+  background: var(--brown-light);
+  border-color: var(--brown-light);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.outline {
+  background: transparent;
+  color: var(--brown);
+  border: 1.5px solid var(--brown);
+}
+.outline:hover {
+  background: var(--brown);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.outlineLight {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+}
+.outlineLight:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--white);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--brown);
+  border: 1.5px solid transparent;
+}
+.ghost:hover {
+  background: var(--tan-pale);
+}
