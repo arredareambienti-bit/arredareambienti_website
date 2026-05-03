@@ -19,7 +19,6 @@ export default function Navbar() {
 
   const NAV_LINKS = [
     { label: t("nav_collections"), href: "/#collezioni" },
-    { label: t("nav_products"), href: "/#prodotti" },
     { label: t("nav_about"), href: "/#chi-siamo" },
     { label: t("nav_location"), href: "/#dove-siamo" },
     { label: t("nav_contact"), href: "/#contatti" },
