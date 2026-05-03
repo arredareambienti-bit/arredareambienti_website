@@ -98,17 +98,12 @@ export default function Location() {
         {/* ── Mappa ─────────────────────────────────── */}
         <div className={styles.mapWrap}>
           <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.3213504929163!2d16.4268126!3d40.8209047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387bf0e9137fc5%3A0xcd5a8eb019e8b276!2sVia%20Federico%20Meninni%2C%20275%2C%2070024%20Gravina%20in%20Puglia%20BA!5e0!3m2!1sit!2sit!4v1777829983245!5m2!1sit!2sit"
             className={styles.map}
-            title="Arredare Ambienti showroom Gravina in Puglia"
-            src={import.meta.env.VITE_MAP_EMBED_URL}
+            allowfullscreen=""
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           />
-          <div className={styles.mapPin}>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" />
-            </svg>
-            <span>{t("location_pin")}</span>
-          </div>
         </div>
       </div>
     </section>

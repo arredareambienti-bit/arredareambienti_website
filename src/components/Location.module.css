@@ -87,7 +87,9 @@
   transition: color var(--transition);
 }
 
-.contactLink:hover { color: var(--brown); }
+.contactLink:hover {
+  color: var(--brown);
+}
 
 /* ── Orari ──────────────────────────────────────── */
 .hours {
@@ -145,43 +147,39 @@
   filter: sepia(20%) saturate(80%);
 }
 
-.mapPin {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: var(--shadow-md);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text);
-  pointer-events: none;
-}
-
-.mapPin svg {
-  width: 18px;
-  height: 18px;
-  color: var(--brown);
-  flex-shrink: 0;
-}
 
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 1024px) {
-  .layout { grid-template-columns: 320px 1fr; }
-  .info { padding: 56px 40px 56px 32px; }
+  .layout {
+    grid-template-columns: 320px 1fr;
+  }
+
+  .info {
+    padding: 56px 40px 56px 32px;
+  }
 }
 
 @media (max-width: 768px) {
-  .layout { grid-template-columns: 1fr; }
-  .info { padding: 56px 24px 40px; }
-  .map { min-height: 380px; }
-  .mapPin { bottom: 16px; left: 16px; }
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    padding: 56px 24px 40px;
+  }
+
+  .map {
+    min-height: 380px;
+  }
+
+  .mapPin {
+    bottom: 16px;
+    left: 16px;
+  }
 }
 
 @media (max-width: 480px) {
-  .map { min-height: 300px; }
+  .map {
+    min-height: 300px;
+  }
 }

@@ -100,7 +100,7 @@ export const translations = {
       {
         icon: "📍",
         label: "Indirizzo",
-        value: "Via del Mobile 24, 70024 Gravina in Puglia (BA)",
+        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
       { icon: "📞", label: "Telefono", value: "+39 051 123 4567" },
       { icon: "✉️", label: "Email", value: "info@arredareambient.it" },
@@ -114,8 +114,8 @@ export const translations = {
     // Location
     location_label: "Showroom",
     location_title: "Dove siamo",
-    location_street: "Via del Mobile 24",
-    location_city: "70024 Gravina in Puglia (BA)",
+    location_street: "Via Federico Meninni 275",
+    location_city: "Gravina in Puglia (BA)",
     location_phone: "+39 051 123 4567",
     location_email: "info@arredareambient.it",
     location_hours_title: "Orari di apertura",
@@ -135,7 +135,7 @@ export const translations = {
       { days: "Sabato", time: "9:00 – 19:00" },
       { days: "Domenica", time: "10:00 – 17:00" },
     ],
-    footer_hours_note: "Via del Mobile 24 · Gravina in Puglia",
+    footer_hours_note: "Via Federico Meninni 275 · Gravina in Puglia",
     footer_cols: [
       {
         title: "Azienda",
@@ -178,7 +178,7 @@ export const translations = {
       {
         icon: "📍",
         label: "Indirizzo",
-        value: "Via del Mobile 24, 70024 Gravina in Puglia (BA)",
+        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
       { icon: "📞", label: "Telefono", value: "+39 051 123 4567" },
       { icon: "✉️", label: "Email", value: "info@arredareambient.it" },
@@ -294,7 +294,7 @@ export const translations = {
       {
         icon: "📍",
         label: "Address",
-        value: "Via del Mobile 24, 70024 Gravina in Puglia (BA)",
+        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
       { icon: "📞", label: "Phone", value: "+39 051 123 4567" },
       { icon: "✉️", label: "Email", value: "info@arredareambient.it" },
@@ -308,8 +308,8 @@ export const translations = {
     // Location
     location_label: "Showroom",
     location_title: "Location",
-    location_street: "Via del Mobile 24",
-    location_city: "70024 Gravina in Puglia (BA)",
+    location_street: "Via Federico Meninni 275",
+    location_city: "Gravina in Puglia (BA)",
     location_phone: "+39 051 123 4567",
     location_email: "info@arredareambient.it",
     location_hours_title: "Opening hours",
@@ -329,7 +329,7 @@ export const translations = {
       { days: "Saturday", time: "9:00 – 19:00" },
       { days: "Sunday", time: "10:00 – 17:00" },
     ],
-    footer_hours_note: "Via del Mobile 24 · Gravina in Puglia",
+    footer_hours_note: "Via Federico Meninni 275 · Gravina in Puglia",
     footer_cols: [
       {
         title: "Company",
@@ -367,7 +367,7 @@ export const translations = {
       {
         icon: "📍",
         label: "Address",
-        value: "Via del Mobile 24, 70024 Gravina in Puglia (BA)",
+        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
       { icon: "📞", label: "Phone", value: "+39 051 123 4567" },
       { icon: "✉️", label: "Email", value: "info@arredareambient.it" },
