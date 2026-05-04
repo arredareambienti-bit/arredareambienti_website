@@ -9,10 +9,6 @@ import ProductModal from "../components/ProductModal";
 import styles from "./CategoryPage.module.css";
 import ScrollToTop from "../components/ScrollToTop";
 
-function formatPrice(n) {
-  return n.toLocaleString("it-IT");
-}
-
 export default function CategoryPage() {
   const { slug } = useParams();
   const { lang } = useLang();
@@ -102,9 +98,6 @@ export default function CategoryPage() {
                   </div>
                   <div className={styles.productBody}>
                     <h3 className={styles.productName}>{product.name}</h3>
-                    <span className={styles.productPrice}>
-                      € {formatPrice(product.price)}
-                    </span>
                   </div>
                 </button>
               ))}

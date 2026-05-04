@@ -109,7 +109,7 @@ export default function Footer() {
         <div className={styles.bottom}>
           <span className={styles.copy}>
             © {new Date().getFullYear()} Arredare Ambienti S.r.l. — P.IVA
-            01234567890 — Gravina in Puglia
+            01256620772 — Gravina in Puglia
           </span>
           <div className={styles.legal}>
             <a href="#" className={styles.legalLink}>

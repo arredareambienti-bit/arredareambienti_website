@@ -12,13 +12,11 @@ export const CATEGORIES_DATA = [
       {
         id: 1,
         name: "Sedia legno naturale",
-        price: 120,
         images: ["/assets/chairs/IMG-20260420-WA0061.jpg"],
       },
       {
         id: 2,
         name: "Sedia minimal scandinava",
-        price: 140,
         images: ["/assets/chairs/IMG-20260420-WA0062.jpg"],
       },
     ],
@@ -37,19 +35,16 @@ export const CATEGORIES_DATA = [
       {
         id: 1,
         name: "Madia in legno massello",
-        price: 890,
         images: ["/assets/furniture/IMG-20260420-WA0026.jpg"],
       },
       {
         id: 2,
         name: "Libreria modulare",
-        price: 690,
         images: ["/assets/furniture/IMG-20260420-WA0027.jpg"],
       },
       {
         id: 3,
         name: "Credenza moderna",
-        price: 790,
         images: ["/assets/furniture/IMG-20260420-WA0044.jpg"],
       },
     ],
@@ -68,13 +63,11 @@ export const CATEGORIES_DATA = [
       {
         id: 1,
         name: "Tavolo rovere naturale",
-        price: 650,
         images: ["/assets/tables/IMG-20260420-WA0056.jpg"],
       },
       {
         id: 2,
         name: "Tavolo moderno minimal",
-        price: 720,
         images: ["/assets/tables/IMG-20260420-WA0057.jpg"],
       },
     ],
@@ -93,25 +86,21 @@ export const CATEGORIES_DATA = [
       {
         id: 1,
         name: "Divano 3 posti moderno",
-        price: 1490,
         images: ["/assets/sofa_armchairs/IMG-20260420-WA0049.jpg"],
       },
       {
         id: 2,
         name: "Divano angolare grande",
-        price: 1890,
         images: ["/assets/sofa_armchairs/IMG-20260420-WA0050.jpg"],
       },
       {
         id: 3,
         name: "Divano relax imbottito",
-        price: 1590,
         images: ["/assets/sofa_armchairs/IMG-20260420-WA0051.jpg"],
       },
       {
         id: 4,
         name: "Divano minimal elegante",
-        price: 1390,
         images: ["/assets/sofa_armchairs/IMG-20260420-WA0053.jpg"],
       },
     ],
@@ -130,25 +119,21 @@ export const CATEGORIES_DATA = [
       {
         id: 1,
         name: "Cucina moderna bianca",
-        price: 4990,
         images: ["/assets/kitchen/IMG-20260420-WA0007.jpg"],
       },
       {
         id: 2,
         name: "Cucina classica rovere",
-        price: 5490,
         images: ["/assets/kitchen/IMG-20260420-WA0012.jpg"],
       },
       {
         id: 3,
         name: "Cucina con penisola",
-        price: 2890,
         images: ["/assets/kitchen/IMG-20260420-WA0032.jpg"],
       },
       {
         id: 4,
         name: "Cucina lineare minimal",
-        price: 3190,
         images: ["/assets/kitchen/IMG-20260420-WA0010.jpg"],
       },
     ],
@@ -167,19 +152,16 @@ export const CATEGORIES_DATA = [
       {
         id: 1,
         name: "Letto king noce",
-        price: 1890,
         images: ["/assets/bedroom/IMG-20260420-WA0022.jpg"],
       },
       {
         id: 2,
         name: "Letto queen rovere",
-        price: 1490,
         images: ["/assets/bedroom/IMG-20260420-WA0024.jpg"],
       },
       {
         id: 3,
         name: "Letto contenitore moderno",
-        price: 1690,
         images: ["/assets/bedroom/IMG-20260420-WA0025.jpg"],
       },
     ],
@@ -198,25 +180,21 @@ export const CATEGORIES_DATA = [
       {
         id: 1,
         name: "Soggiorno moderno completo",
-        price: 3890,
         images: ["/assets/living_room/IMG-20260420-WA0028.jpg"],
       },
       {
         id: 2,
         name: "Soggiorno classico elegante",
-        price: 4290,
         images: ["/assets/living_room/IMG-20260420-WA0031.jpg"],
       },
       {
         id: 3,
         name: "Parete attrezzata moderna",
-        price: 3590,
         images: ["/assets/living_room/IMG-20260420-WA0045.jpg"],
       },
       {
         id: 4,
         name: "Mobile TV design",
-        price: 1990,
         images: ["/assets/living_room/IMG-20260420-WA0046.jpg"],
       },
     ],
