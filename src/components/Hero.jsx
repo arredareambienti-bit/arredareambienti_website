@@ -26,7 +26,13 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        <img
+          src="/assets/logo.jpeg"
+          alt="Arredare Ambienti Logo"
+          className={styles.logoImage}
+        />
+      </div>
     </section>
   );
 }
