@@ -1,10 +1,15 @@
+import { useState } from "react";
 import useInView from "../hooks/useInView";
 import { useT } from "../i18n/useT";
 import styles from "./Location.module.css";
 
 export default function Location() {
   const [ref, inView] = useInView();
+  const [selectedLocation, setSelectedLocation] = useState("gravina");
   const t = useT();
+  const locations = t("location_list");
+  const currentLocation =
+    locations.find((loc) => loc.id === selectedLocation) || locations[0];
 
   return (
     <section
@@ -19,26 +24,58 @@ export default function Location() {
         <div className={styles.info}>
           <h2 className={styles.title}>{t("location_title")}</h2>
 
-          <div className={styles.addressBlock}>
-            <svg
-              className={styles.icon}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M12 21c-4-4-7-7.5-7-11a7 7 0 0 1 14 0c0 3.5-3 7-7 11Z" />
-              <circle cx="12" cy="10" r="2.5" />
-            </svg>
-            <div>
-              <p className={styles.street}>{t("location_street")}</p>
-              <p className={styles.city}>{t("location_city")}</p>
-            </div>
+          {/* ── Lista Indirizzi ─────────────────────── */}
+          <div className={styles.locationsList}>
+            {locations.map((loc) => (
+              <div key={loc.id} className={styles.locationCard}>
+                <div className={styles.locationHeader}>
+                  <div className={styles.locationNameBlock}>
+                    <svg
+                      className={styles.markerIcon}
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 21c-4-4-7-7.5-7-11a7 7 0 0 1 14 0c0 3.5-3 7-7 11Z" />
+                      <circle cx="12" cy="10" r="2.5" fill="white" />
+                    </svg>
+                    <div>
+                      <p className={styles.locationName}>{loc.name}</p>
+                      <p className={styles.locationCity}>{loc.city}</p>
+                    </div>
+                  </div>
+                  <button
+                    className={[
+                      styles.mapButton,
+                      selectedLocation === loc.id && styles.mapButtonActive,
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
+                    onClick={() => setSelectedLocation(loc.id)}
+                    aria-label={`Visualizza mappa di ${loc.name}`}
+                    title={`Visualizza mappa di ${loc.name}`}
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+                      <polyline points="8 2 8 18" />
+                      <polyline points="16 6 16 22" />
+                    </svg>
+                  </button>
+                </div>
+                <p className={styles.locationStreet}>{loc.street}</p>
+              </div>
+            ))}
           </div>
 
+          {/* ── Contatti generali ─────────────────────── */}
           <div className={styles.contactRow}>
             <svg
               className={styles.icon}
@@ -98,7 +135,7 @@ export default function Location() {
         {/* ── Mappa ─────────────────────────────────── */}
         <div className={styles.mapWrap}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.3213504929163!2d16.4268126!3d40.8209047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387bf0e9137fc5%3A0xcd5a8eb019e8b276!2sVia%20Federico%20Meninni%2C%20275%2C%2070024%20Gravina%20in%20Puglia%20BA!5e0!3m2!1sit!2sit!4v1777829983245!5m2!1sit!2sit"
+            src={currentLocation.mapEmbedUrl}
             className={styles.map}
             allowfullscreen=""
             loading="lazy"
