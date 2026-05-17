@@ -9,10 +9,12 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: #000;
 }
 
-.required { color: var(--brown); }
+.required {
+  color: var(--brown);
+}
 
 .textarea {
   width: 100%;
@@ -28,7 +30,9 @@
   line-height: 1.6;
 }
 
-.textarea::placeholder { color: var(--tan); }
+.textarea::placeholder {
+  color: var(--tan);
+}
 
 .textarea:focus {
   border-color: var(--brown);

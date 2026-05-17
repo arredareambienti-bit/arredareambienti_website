@@ -9,10 +9,12 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: #000;
 }
 
-.required { color: var(--brown); }
+.required {
+  color: var(--brown);
+}
 
 .input {
   width: 100%;
@@ -26,7 +28,9 @@
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 
-.input::placeholder { color: var(--tan); }
+.input::placeholder {
+  color: var(--tan);
+}
 
 .input:focus {
   border-color: var(--brown);

@@ -6,10 +6,10 @@
 
 /* --- Left panel --- */
 .left {
-  background: var(--dark);
+  background: #000;
   display: flex;
   align-items: center;
-  padding: 140px 72px 80px 7%;
+  padding: 70px 72px 80px 7%;
   position: relative;
   overflow: hidden;
 }
@@ -18,11 +18,11 @@
   content: '';
   position: absolute;
   top: -120px;
-  left: -120px;
+  right: -120px;
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: rgba(200, 168, 130, 0.05);
+  background: rgba(200, 168, 130, 0.282);
   pointer-events: none;
 }
 
@@ -116,6 +116,8 @@
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+    height: 50vh;
+    min-height: 50vh;
   }
 
   .left {
@@ -133,8 +135,7 @@
   }
 
   .right {
-    height: 55vw;
-    min-height: 320px;
+    display: none;
   }
 
   .badge {

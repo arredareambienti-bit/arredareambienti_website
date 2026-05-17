@@ -7,6 +7,13 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
+      <div className={styles.right}>
+        <img
+          src="/assets/logo.jpeg"
+          alt="Arredare Ambienti Logo"
+          className={styles.logoImage}
+        />
+      </div>
       <div className={styles.left}>
         <div className={styles.content}>
           <span className={styles.eyebrow}>{t("hero_eyebrow")}</span>
@@ -24,14 +31,6 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-      </div>
-
-      <div className={styles.right}>
-        <img
-          src="/assets/logo.jpeg"
-          alt="Arredare Ambienti Logo"
-          className={styles.logoImage}
-        />
       </div>
     </section>
   );

@@ -165,7 +165,7 @@
 }
 
 .scrolled .langInactive {
-  color: var(--text-muted);
+  color: rgba(158, 158, 158, 0.971);
 }
 
 .langSep {
