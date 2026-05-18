@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { useT } from '../i18n/useT'
 import SectionHeader from './ui/SectionHeader'
 import TextField from './ui/TextField'
@@ -7,17 +8,42 @@ import Button from './ui/Button'
 import useInView from '../hooks/useInView'
 import styles from './Contact.module.css'
 
+const SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
 export default function Contact() {
   const [ref, inView] = useInView()
   const [form, setForm] = useState({ nome: '', email: '', telefono: '', messaggio: '' })
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
   const t = useT()
 
   const set = key => e => setForm(f => ({ ...f, [key]: e.target.value }))
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
-    setSent(true)
+    setError('')
+    setSending(true)
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name:  form.nome,
+          from_email: form.email,
+          phone:      form.telefono,
+          message:    form.messaggio,
+        },
+        PUBLIC_KEY
+      )
+      setSent(true)
+    } catch {
+      setError(t('contact_error'))
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -81,8 +107,9 @@ export default function Contact() {
                 value={form.messaggio}
                 onChange={set('messaggio')}
               />
-              <Button type="submit" variant="primary" size="lg">
-                {t('contact_send')}
+              {error && <p className={styles.error}>{error}</p>}
+              <Button type="submit" variant="primary" size="lg" disabled={sending}>
+                {sending ? t('contact_sending') : t('contact_send')}
               </Button>
             </form>
           )}

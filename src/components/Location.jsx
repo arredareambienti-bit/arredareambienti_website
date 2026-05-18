@@ -1,13 +1,18 @@
 import { useState } from "react";
 import useInView from "../hooks/useInView";
 import { useT } from "../i18n/useT";
+import { LOCATIONS } from "../data/locations";
 import styles from "./Location.module.css";
 
 export default function Location() {
   const [ref, inView] = useInView();
   const [selectedLocation, setSelectedLocation] = useState("gravina");
   const t = useT();
-  const locations = t("location_list");
+  const translatedList = Array.isArray(t("location_list")) ? t("location_list") : [];
+  const locations = translatedList.map((loc) => ({
+    ...LOCATIONS.find((l) => l.id === loc.id),
+    ...loc,
+  }));
   const currentLocation =
     locations.find((loc) => loc.id === selectedLocation) || locations[0];
 
@@ -52,8 +57,8 @@ export default function Location() {
                       .filter(Boolean)
                       .join(" ")}
                     onClick={() => setSelectedLocation(loc.id)}
-                    aria-label={`Visualizza mappa di ${loc.name}`}
-                    title={`Visualizza mappa di ${loc.name}`}
+                    aria-label={`${t("location_map_btn")} ${loc.name}`}
+                    title={`${t("location_map_btn")} ${loc.name}`}
                   >
                     <svg
                       viewBox="0 0 24 24"
@@ -137,7 +142,7 @@ export default function Location() {
           <iframe
             src={currentLocation.mapEmbedUrl}
             className={styles.map}
-            allowfullscreen=""
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
