@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useT } from "../i18n/useT";
 import styles from "./Footer.module.css";
 
@@ -55,7 +56,7 @@ export default function Footer() {
 
             <div className={styles.social}>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/arredare_ambienti?igsh=ZGJiMG5wa294bWls&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
@@ -64,7 +65,7 @@ export default function Footer() {
                 <IconInstagram />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1CtRqcSno2/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
@@ -115,9 +116,9 @@ export default function Footer() {
             <a href="#" className={styles.legalLink}>
               {t("footer_privacy")}
             </a>
-            <a href="#" className={styles.legalLink}>
+            <Link to="/cookie-policy" className={styles.legalLink}>
               {t("footer_cookie")}
-            </a>
+            </Link>
             <a href="#" className={styles.legalLink}>
               {t("footer_terms")}
             </a>

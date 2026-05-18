@@ -10,7 +10,7 @@ export default function Hero() {
       <div className={styles.right}>
         <img
           src="/assets/logo.jpeg"
-          alt="Arredare Ambienti Logo"
+          alt={t("hero_logo_alt")}
           className={styles.logoImage}
         />
       </div>
