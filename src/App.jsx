@@ -9,6 +9,9 @@ import Contact from "./components/Contact";
 import Location from "./components/Location";
 import Footer from "./components/Footer";
 import CategoryPage from "./pages/CategoryPage";
+import CookiePolicyPage from "./pages/CookiePolicyPage";
+import CookieBanner from "./components/CookieBanner";
+import FloatingButtons from "./components/FloatingButtons";
 import "./App.css";
 
 function HomePage() {
@@ -19,7 +22,7 @@ function HomePage() {
         <Hero />
         <Categories />
         <About />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Location />
         <Contact />
       </main>
@@ -35,7 +38,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/categoria/:slug" element={<CategoryPage />} />
+          <Route path="/cookie-policy" element={<CookiePolicyPage />} />
         </Routes>
+        <CookieBanner />
+        <FloatingButtons />
       </BrowserRouter>
     </LangProvider>
   );
