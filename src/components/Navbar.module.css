@@ -123,6 +123,11 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
+/* When menu is open, always show white lines regardless of scroll state */
+.menuBtnOpen .line {
+  background: var(--white) !important;
+}
+
 /* --- Lang toggle --- */
 .langToggle {
   display: flex;
@@ -165,7 +170,7 @@
 }
 
 .scrolled .langInactive {
-  color: rgba(158, 158, 158, 0.971);
+  color: var(--text-muted);
 }
 
 .langSep {
@@ -209,6 +214,11 @@
   }
 
   .navLink:hover {
+    color: var(--white) !important;
+  }
+
+  /* Logo stays white when full-screen menu is open over dark overlay */
+  .navbar:has(.navOpen) .logoMain {
     color: var(--white) !important;
   }
 }

@@ -1,3 +1,5 @@
+import { PHONE_FISSO, PHONE_MOBILE, EMAIL } from "../data/contacts";
+
 export const translations = {
   it: {
     // Navbar
@@ -9,6 +11,7 @@ export const translations = {
     nav_quote: "Richiedi preventivo",
 
     // Hero
+    hero_logo_alt: "Arredare Ambienti",
     hero_eyebrow: "— Arredamento di qualità dal 1987",
     hero_title: "Arreda il tuo spazio con stile",
     hero_title_em: "stile",
@@ -87,7 +90,7 @@ export const translations = {
     contact_email_lbl: "Email",
     contact_email_ph: "mario@esempio.it",
     contact_phone_lbl: "Telefono",
-    contact_phone_ph: "+39 080 4727901",
+    contact_phone_ph: PHONE_FISSO,
     contact_message_lbl: "Il tuo messaggio",
     contact_message_ph: "Descrivi il tuo progetto o cosa stai cercando...",
     contact_send: "Invia messaggio",
@@ -95,6 +98,8 @@ export const translations = {
     contact_ok_body:
       "Ti risponderemo entro 24 ore. Nel frattempo visita il nostro showroom.",
     contact_ok_btn: "Invia un altro messaggio",
+    contact_sending: "Invio in corso...",
+    contact_error: "Invio fallito. Riprova o contattaci direttamente per email.",
     contact_visit: "Vieni a trovarci",
     contact_info: [
       {
@@ -102,9 +107,9 @@ export const translations = {
         label: "Indirizzo",
         value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
-      { icon: "📞", label: "Telefono Fisso", value: "+39 080 4727901" },
-      { icon: "📱", label: "Cellulare", value: "+39 376 1606393" },
-      { icon: "✉️", label: "Email", value: "bentleycommerciale@gmail.com" },
+      { icon: "📞", label: "Telefono Fisso", value: PHONE_FISSO },
+      { icon: "📱", label: "Cellulare", value: PHONE_MOBILE },
+      { icon: "✉️", label: "Email", value: EMAIL },
       {
         icon: "🕐",
         label: "Orari",
@@ -115,8 +120,8 @@ export const translations = {
     // Location
     location_label: "Showroom",
     location_title: "Dove siamo",
-    location_phone: "+39 080 4727901",
-    location_email: "bentleycommerciale@gmail.com",
+    location_phone: PHONE_FISSO,
+    location_email: EMAIL,
     location_hours_title: "Orari di apertura",
     location_hours: [
       { days: "Lunedì – Venerdì", time: "9:00 – 19:00" },
@@ -129,19 +134,22 @@ export const translations = {
         name: "Showroom",
         street: "Via Federico Meninni 275",
         city: "Gravina in Puglia (BA)",
-        mapEmbedUrl:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.3213504929163!2d16.4268126!3d40.8209047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387bf0e9137fc5%3A0xcd5a8eb019e8b276!2sVia%20Federico%20Meninni%2C%20275%2C%2070024%20Gravina%20in%20Puglia%20BA!5e0!3m2!1sit!2sit!4v1777829983245!5m2!1sit!2sit",
       },
       {
         id: "matera",
         name: "Esposizione",
         street: "Via Gravina 15",
         city: "Matera (MT)",
-        mapEmbedUrl:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.8211504929163!2d16.6029!3d40.6647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13391e9e8b3f7c9d%3A0x1234567890abcdef!2sVia%20Gravina%2C%2015%2C%2075100%20Matera%20MT!5e0!3m2!1sit!2sit!4v1234567890123",
       },
     ],
-    location_pin: "Showroom · Gravina in Puglia",
+    location_pin: "Showroom · Gravina in Puglia e Matera",
+    location_map_btn: "Visualizza mappa di",
+
+    // Cookie banner
+    cookie_text: "Utilizziamo i cookie per migliorare la tua esperienza di navigazione e analizzare il traffico del sito.",
+    cookie_policy: "Cookie Policy",
+    cookie_accept: "Accetta",
+    cookie_decline: "Rifiuta",
 
     // Footer
     footer_tagline:
@@ -197,8 +205,8 @@ export const translations = {
         label: "Indirizzo",
         value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
-      { icon: "📞", label: "Telefono", value: "+39 080 4727901" },
-      { icon: "✉️", label: "Email", value: "bentleycommerciale@gmail.com" },
+      { icon: "📞", label: "Telefono", value: PHONE_FISSO },
+      { icon: "✉️", label: "Email", value: EMAIL },
     ],
     cat_discover: "Scopri",
     cat_gallery_hint: "Vedi galleria",
@@ -220,6 +228,7 @@ export const translations = {
     nav_quote: "Request a quote",
 
     // Hero
+    hero_logo_alt: "Arredare Ambienti",
     hero_eyebrow: "— Quality furniture since 1987",
     hero_title: "Furnish your space with style",
     hero_title_em: "style",
@@ -298,7 +307,7 @@ export const translations = {
     contact_email_lbl: "Email",
     contact_email_ph: "john@example.com",
     contact_phone_lbl: "Phone",
-    contact_phone_ph: "+39 080 4727901",
+    contact_phone_ph: PHONE_FISSO,
     contact_message_lbl: "Your message",
     contact_message_ph: "Describe your project or what you are looking for...",
     contact_send: "Send message",
@@ -306,6 +315,8 @@ export const translations = {
     contact_ok_body:
       "We will reply within 24 hours. In the meantime, visit our showroom.",
     contact_ok_btn: "Send another message",
+    contact_sending: "Sending...",
+    contact_error: "Failed to send. Please try again or contact us directly by email.",
     contact_visit: "Visit us",
     contact_info: [
       {
@@ -313,9 +324,9 @@ export const translations = {
         label: "Address",
         value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
-      { icon: "📞", label: "Landline", value: "+39 080 4727901" },
-      { icon: "📱", label: "Mobile", value: "+39 376 1606393" },
-      { icon: "✉️", label: "Email", value: "bentleycommerciale@gmail.com" },
+      { icon: "📞", label: "Landline", value: PHONE_FISSO },
+      { icon: "📱", label: "Mobile", value: PHONE_MOBILE },
+      { icon: "✉️", label: "Email", value: EMAIL },
       {
         icon: "🕐",
         label: "Hours",
@@ -326,8 +337,8 @@ export const translations = {
     // Location
     location_label: "Showroom",
     location_title: "Location",
-    location_phone: "+39 080 4727901",
-    location_email: "bentleycommerciale@gmail.com",
+    location_phone: PHONE_FISSO,
+    location_email: EMAIL,
     location_hours_title: "Opening hours",
     location_hours: [
       { days: "Monday – Friday", time: "9:00 – 19:00" },
@@ -340,19 +351,22 @@ export const translations = {
         name: "Showroom",
         street: "Via Federico Meninni 275",
         city: "Gravina in Puglia (BA)",
-        mapEmbedUrl:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.3213504929163!2d16.4268126!3d40.8209047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387bf0e9137fc5%3A0xcd5a8eb019e8b276!2sVia%20Federico%20Meninni%2C%20275%2C%2070024%20Gravina%20in%20Puglia%20BA!5e0!3m2!1sit!2sit!4v1777829983245!5m2!1sit!2sit",
       },
       {
         id: "matera",
         name: "Exhibition",
         street: "Via Gravina 15",
         city: "Matera (MT)",
-        mapEmbedUrl:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.8211504929163!2d16.6029!3d40.6647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13391e9e8b3f7c9d%3A0x1234567890abcdef!2sVia%20Gravina%2C%2015%2C%2075100%20Matera%20MT!5e0!3m2!1sit!2sit!4v1234567890123",
       },
     ],
-    location_pin: "Showroom · Gravina in Puglia",
+    location_pin: "Showroom · Gravina in Puglia & Matera",
+    location_map_btn: "View map of",
+
+    // Cookie banner
+    cookie_text: "We use cookies to improve your browsing experience and analyze site traffic.",
+    cookie_policy: "Cookie Policy",
+    cookie_accept: "Accept",
+    cookie_decline: "Decline",
 
     // Footer
     footer_tagline:
@@ -403,8 +417,8 @@ export const translations = {
         label: "Address",
         value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
-      { icon: "📞", label: "Phone", value: "+39 080 4727901" },
-      { icon: "✉️", label: "Email", value: "bentleycommerciale@gmail.com" },
+      { icon: "📞", label: "Phone", value: PHONE_FISSO },
+      { icon: "✉️", label: "Email", value: EMAIL },
     ],
     cat_discover: "Explore",
     cat_gallery_hint: "View gallery",
