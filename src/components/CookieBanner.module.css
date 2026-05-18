@@ -1,0 +1,98 @@
+.banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: var(--dark);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 24px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  flex: 1;
+}
+
+.link {
+  color: var(--tan);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link:hover {
+  color: var(--gold);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.btnDecline {
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.btnDecline:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--white);
+}
+
+.btnAccept {
+  padding: 8px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: var(--tan);
+  color: var(--dark);
+  transition: background var(--transition);
+}
+
+.btnAccept:hover {
+  background: var(--gold);
+}
+
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .btnDecline,
+  .btnAccept {
+    flex: 1;
+    text-align: center;
+  }
+}
