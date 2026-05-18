@@ -139,6 +139,15 @@
   border: 1.5px dashed var(--tan);
 }
 
+.error {
+  font-size: 0.875rem;
+  color: #c0392b;
+  background: #fdf0ee;
+  border: 1px solid #f5c6c0;
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+}
+
 /* --- Responsive --- */
 @media (max-width: 600px) {
   .section { padding: 64px 0; }
