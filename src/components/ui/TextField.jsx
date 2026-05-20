@@ -8,6 +8,7 @@ export default function TextField({
   required,
   value,
   onChange,
+  error,
 }) {
   return (
     <div className={styles.field}>
@@ -24,8 +25,9 @@ export default function TextField({
         required={required}
         value={value}
         onChange={onChange}
-        className={styles.input}
+        className={[styles.input, error && styles.inputError].filter(Boolean).join(' ')}
       />
+      {error && <span className={styles.errorMsg}>{error}</span>}
     </div>
   )
 }

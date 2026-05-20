@@ -36,3 +36,17 @@
   border-color: var(--brown);
   box-shadow: 0 0 0 3px rgba(107, 66, 38, 0.08);
 }
+
+.inputError {
+  border-color: #c0392b;
+}
+
+.inputError:focus {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+}
+
+.errorMsg {
+  font-size: 0.75rem;
+  color: #c0392b;
+}

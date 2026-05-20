@@ -16,6 +16,13 @@
 
 .btn:active { transform: scale(0.97) !important; }
 
+.disabled,
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* --- Sizes --- */
 .sm  { font-size: 0.8rem;   padding: 9px 20px; }
 .md  { font-size: 0.875rem; padding: 13px 28px; }

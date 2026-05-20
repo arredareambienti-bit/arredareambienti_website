@@ -68,11 +68,6 @@ export default function CookiePolicyPage() {
                     <td>Salva la preferenza di consenso ai cookie dell'utente</td>
                     <td>Persistente (localStorage)</td>
                   </tr>
-                  <tr>
-                    <td><code>lang</code></td>
-                    <td>Ricorda la lingua selezionata (IT/EN)</td>
-                    <td>Sessione</td>
-                  </tr>
                 </tbody>
               </table>
 

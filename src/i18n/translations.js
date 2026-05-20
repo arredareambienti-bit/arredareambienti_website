@@ -1,10 +1,9 @@
-import { PHONE_FISSO, PHONE_MOBILE, EMAIL } from "../data/contacts";
+import { PHONE_FISSO, PHONE_PAOLO, PHONE_LEO, EMAIL } from "../data/contacts";
 
 export const translations = {
   it: {
     // Navbar
     nav_collections: "Collezioni",
-    nav_products: "Prodotti",
     nav_about: "Chi Siamo",
     nav_contact: "Contatti",
     nav_location: "Dove siamo",
@@ -19,7 +18,6 @@ export const translations = {
       "Mobili artigianali e design contemporaneo per trasformare ogni ambiente in un luogo che racconta chi sei.",
     hero_cta1: "Scopri le collezioni",
     hero_cta2: "Richiedi preventivo",
-    hero_badge: "clienti soddisfatti",
 
     // Products
     products_label: "Prodotti in evidenza",
@@ -27,7 +25,6 @@ export const translations = {
     products_subtitle:
       "Qualità artigianale e design contemporaneo in ogni pezzo della nostra selezione.",
     products_filters: ["Tutti", "Soggiorno", "Camera da Letto", "Ufficio"],
-    products_filter_keys: ["Tutti", "Soggiorno", "Camera da Letto", "Ufficio"],
     products_badge_sale: "Offerta",
     products_badge_new: "Novità",
     products_add: "Aggiungi al preventivo",
@@ -40,7 +37,6 @@ export const translations = {
       "Dal 1987 trasformiamo legni pregiati e materiali di qualità in pezzi unici che abitano le case di migliaia di famiglie italiane.",
     about_body:
       "Arredare Ambienti nasce da una passione per il bello e il durevole. Ogni mobile che produciamo porta con sé ore di lavorazione artigianale, scelta meticolosa dei materiali e attenzione per ogni dettaglio. Non vendiamo solo mobili — ti aiutiamo a costruire il tuo spazio ideale.",
-    about_cta: "Scopri la nostra storia",
     about_stats: [
       { value: "35+", label: "anni di esperienza" },
       { value: "10k+", label: "clienti soddisfatti" },
@@ -95,30 +91,18 @@ export const translations = {
     contact_message_ph: "Descrivi il tuo progetto o cosa stai cercando...",
     contact_send: "Invia messaggio",
     contact_ok_title: "Messaggio inviato!",
-    contact_ok_body:
-      "Ti risponderemo entro 24 ore. Nel frattempo visita il nostro showroom.",
     contact_ok_btn: "Invia un altro messaggio",
     contact_sending: "Invio in corso...",
     contact_error: "Invio fallito. Riprova o contattaci direttamente per email.",
-    contact_visit: "Vieni a trovarci",
-    contact_info: [
-      {
-        icon: "📍",
-        label: "Indirizzo",
-        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
-      },
-      { icon: "📞", label: "Telefono Fisso", value: PHONE_FISSO },
-      { icon: "📱", label: "Cellulare", value: PHONE_MOBILE },
-      { icon: "✉️", label: "Email", value: EMAIL },
-      {
-        icon: "🕐",
-        label: "Orari",
-        value: "Lun–Sab 9:00–19:00 · Dom 10:00–17:00",
-      },
+    contact_email_invalid: "Inserisci un indirizzo email valido.",
+    contact_phone_invalid: "Inserisci un numero valido (max 10 cifre).",
+    contact_team_title: "Parla con noi",
+    contact_team: [
+      { name: "Paolo", role: "Designer",    phone: PHONE_PAOLO },
+      { name: "Leo",   role: "Arredatore",  phone: PHONE_LEO   },
     ],
 
     // Location
-    location_label: "Showroom",
     location_title: "Dove siamo",
     location_phone: PHONE_FISSO,
     location_email: EMAIL,
@@ -142,7 +126,6 @@ export const translations = {
         city: "Matera (MT)",
       },
     ],
-    location_pin: "Showroom · Gravina in Puglia e Matera",
     location_map_btn: "Visualizza mappa di",
 
     // Cookie banner
@@ -191,22 +174,11 @@ export const translations = {
 
     // CategoryPage
     cat_home: "Home",
-    cat_filters: "Filtri",
-    cat_products_count: (n) => `${n} prodotti`,
-    cat_visit: "Vieni a trovarci",
     cat_info: [
-      {
-        icon: "🕐",
-        label: "Orari",
-        value: "Lun–Sab 9:00–19:00 · Dom 10:00–17:00",
-      },
-      {
-        icon: "📍",
-        label: "Indirizzo",
-        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
-      },
-      { icon: "📞", label: "Telefono", value: PHONE_FISSO },
-      { icon: "✉️", label: "Email", value: EMAIL },
+      { icon: "clock", value: "Lun–Sab 9:00–19:00 · Dom 10:00–17:00" },
+      { icon: "pin",   value: "Via Federico Meninni 275, Gravina in Puglia (BA)" },
+      { icon: "phone", value: PHONE_FISSO },
+      { icon: "mail",  value: EMAIL },
     ],
     cat_discover: "Scopri",
     cat_gallery_hint: "Vedi galleria",
@@ -221,7 +193,6 @@ export const translations = {
   en: {
     // Navbar
     nav_collections: "Collections",
-    nav_products: "Products",
     nav_about: "About Us",
     nav_contact: "Contact",
     nav_location: "Location",
@@ -236,7 +207,6 @@ export const translations = {
       "Handcrafted furniture and contemporary design to transform every room into a place that tells your story.",
     hero_cta1: "Explore collections",
     hero_cta2: "Get a quote",
-    hero_badge: "happy customers",
 
     // Products
     products_label: "Featured products",
@@ -244,7 +214,6 @@ export const translations = {
     products_subtitle:
       "Artisan quality and contemporary design in every piece of our selection.",
     products_filters: ["All", "Living Room", "Bedroom", "Office"],
-    products_filter_keys: ["Tutti", "Soggiorno", "Camera da Letto", "Ufficio"],
     products_badge_sale: "Sale",
     products_badge_new: "New",
     products_add: "Add to quote",
@@ -257,7 +226,6 @@ export const translations = {
       "Since 1987 we have transformed fine woods and quality materials into unique pieces that live in the homes of thousands of Italian families.",
     about_body:
       "Arredare Ambienti was born from a passion for beauty and durability. Every piece of furniture we produce carries hours of artisan work, meticulous material selection, and attention to every detail. We don't just sell furniture — we help you build your ideal space.",
-    about_cta: "Our story",
     about_stats: [
       { value: "35+", label: "years of experience" },
       { value: "10k+", label: "satisfied customers" },
@@ -266,7 +234,7 @@ export const translations = {
     ],
 
     // Testimonials
-    test_label: "Reviews",
+    test_label: "Testimonials",
     test_title: "What our customers say",
     test_subtitle:
       "Thousands of families have trusted us. Here are some of their experiences.",
@@ -312,30 +280,18 @@ export const translations = {
     contact_message_ph: "Describe your project or what you are looking for...",
     contact_send: "Send message",
     contact_ok_title: "Message sent!",
-    contact_ok_body:
-      "We will reply within 24 hours. In the meantime, visit our showroom.",
     contact_ok_btn: "Send another message",
     contact_sending: "Sending...",
     contact_error: "Failed to send. Please try again or contact us directly by email.",
-    contact_visit: "Visit us",
-    contact_info: [
-      {
-        icon: "📍",
-        label: "Address",
-        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
-      },
-      { icon: "📞", label: "Landline", value: PHONE_FISSO },
-      { icon: "📱", label: "Mobile", value: PHONE_MOBILE },
-      { icon: "✉️", label: "Email", value: EMAIL },
-      {
-        icon: "🕐",
-        label: "Hours",
-        value: "Mon–Sat 9:00–19:00 · Sun 10:00–17:00",
-      },
+    contact_email_invalid: "Please enter a valid email address.",
+    contact_phone_invalid: "Please enter a valid phone number (max 10 digits).",
+    contact_team_title: "Talk to us",
+    contact_team: [
+      { name: "Paolo", role: "Designer",          phone: PHONE_PAOLO },
+      { name: "Leo",   role: "Interior designer",  phone: PHONE_LEO   },
     ],
 
     // Location
-    location_label: "Showroom",
     location_title: "Location",
     location_phone: PHONE_FISSO,
     location_email: EMAIL,
@@ -359,7 +315,6 @@ export const translations = {
         city: "Matera (MT)",
       },
     ],
-    location_pin: "Showroom · Gravina in Puglia & Matera",
     location_map_btn: "View map of",
 
     // Cookie banner
@@ -403,22 +358,11 @@ export const translations = {
 
     // CategoryPage
     cat_home: "Home",
-    cat_filters: "Filters",
-    cat_products_count: (n) => `${n} products`,
-    cat_visit: "Visit us",
     cat_info: [
-      {
-        icon: "🕐",
-        label: "Hours",
-        value: "Mon–Sat 9:00–19:00 · Sun 10:00–17:00",
-      },
-      {
-        icon: "📍",
-        label: "Address",
-        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
-      },
-      { icon: "📞", label: "Phone", value: PHONE_FISSO },
-      { icon: "✉️", label: "Email", value: EMAIL },
+      { icon: "clock", value: "Mon–Sat 9:00–19:00 · Sun 10:00–17:00" },
+      { icon: "pin",   value: "Via Federico Meninni 275, Gravina in Puglia (BA)" },
+      { icon: "phone", value: PHONE_FISSO },
+      { icon: "mail",  value: EMAIL },
     ],
     cat_discover: "Explore",
     cat_gallery_hint: "View gallery",
