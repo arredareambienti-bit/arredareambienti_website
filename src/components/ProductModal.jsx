@@ -40,7 +40,7 @@ export default function ProductModal({ product, onClose }) {
       aria-label={product.name}
     >
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        {/* ── Chiudi ─────────────────────────────── */}
+        {/* Close button */}
         <button
           className={styles.closeBtn}
           onClick={onClose}
@@ -59,7 +59,7 @@ export default function ProductModal({ product, onClose }) {
           </svg>
         </button>
 
-        {/* ── Immagine + frecce ──────────────────── */}
+        {/* Image area with arrows */}
         <div className={styles.imgArea}>
           <img
             key={current}
@@ -112,7 +112,7 @@ export default function ProductModal({ product, onClose }) {
           </span>
         </div>
 
-        {/* ── Info prodotto ──────────────────────── */}
+        {/* Product info */}
         <div className={styles.info}>
           <h2 className={styles.name}>{product.name}</h2>
 

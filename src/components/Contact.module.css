@@ -31,6 +31,39 @@
   gap: 20px;
 }
 
+.privacyRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.privacyCheck {
+  flex-shrink: 0;
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--brown);
+  cursor: pointer;
+}
+
+.privacyText {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.privacyLink {
+  color: var(--brown);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.privacyLink:hover {
+  color: var(--brown-dark);
+}
+
 /* --- Team contacts --- */
 .teamRow {
   display: flex;
@@ -110,36 +143,6 @@
   font-weight: 500;
   white-space: nowrap;
   flex-shrink: 0;
-}
-
-/* --- Success state --- */
-.success {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  background: var(--white);
-  border: 1.5px solid #27AE60;
-  border-radius: var(--radius);
-  padding: 40px 36px;
-}
-
-.successIcon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #27AE60;
-  color: var(--white);
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.success h3 {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  color: var(--dark);
 }
 
 /* --- Info column --- */

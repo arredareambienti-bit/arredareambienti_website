@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -26,6 +24,8 @@
   --text-muted: #8A7060;
   --white: #FFFFFF;
   --border: #C9A872;
+  --accent: #86561D;          /* alias di --brown, usato per hover/highlight UI */
+  --danger: #9c2419;           /* rosso scuro per errori, contrasto AA su cream */
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;

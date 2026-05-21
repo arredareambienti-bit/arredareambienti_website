@@ -10,9 +10,37 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 16px 24px;
+  padding: 16px 24px 16px 48px;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
   animation: slideUp 0.3s ease;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.55);
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color var(--transition), background var(--transition);
+}
+
+.close:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.close:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
 
 @keyframes slideUp {
@@ -43,37 +71,22 @@
   flex-shrink: 0;
 }
 
-.btnDecline {
-  padding: 8px 18px;
-  border-radius: var(--radius-sm);
-  font-size: 0.8125rem;
-  font-weight: 500;
-  font-family: var(--font-sans);
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  transition: border-color var(--transition), color var(--transition);
-}
-
-.btnDecline:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-  color: var(--white);
-}
-
+.btnDecline,
 .btnAccept {
-  padding: 8px 20px;
+  min-width: 140px;
+  padding: 10px 20px;
   border-radius: var(--radius-sm);
   font-size: 0.8125rem;
   font-weight: 600;
   font-family: var(--font-sans);
   cursor: pointer;
   border: none;
-  background: var(--tan);
+  background: var(--cream);
   color: var(--dark);
   transition: background var(--transition);
 }
 
+.btnDecline:hover,
 .btnAccept:hover {
   background: var(--gold);
 }

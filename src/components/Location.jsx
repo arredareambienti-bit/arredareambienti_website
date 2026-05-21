@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useInView from "../hooks/useInView";
 import { useT } from "../i18n/useT";
 import { LOCATIONS } from "../data/locations";
@@ -7,7 +7,12 @@ import styles from "./Location.module.css";
 export default function Location() {
   const [ref, inView] = useInView();
   const [selectedLocation, setSelectedLocation] = useState("gravina");
+  const [mapLoaded, setMapLoaded] = useState(false);
   const t = useT();
+
+  useEffect(() => {
+    setMapLoaded(false);
+  }, [selectedLocation]);
   const translatedList = Array.isArray(t("location_list")) ? t("location_list") : [];
   const locations = translatedList.map((loc) => ({
     ...LOCATIONS.find((l) => l.id === loc.id),
@@ -25,11 +30,11 @@ export default function Location() {
       ref={ref}
     >
       <div className={styles.layout}>
-        {/* ── Pannello info ─────────────────────────── */}
+        {/* Info panel */}
         <div className={styles.info}>
           <h2 className={styles.title}>{t("location_title")}</h2>
 
-          {/* ── Lista Indirizzi ─────────────────────── */}
+          {/* Address list */}
           <div className={styles.locationsList}>
             {locations.map((loc) => (
               <div key={loc.id} className={styles.locationCard}>
@@ -80,7 +85,7 @@ export default function Location() {
             ))}
           </div>
 
-          {/* ── Contatti generali ─────────────────────── */}
+          {/* General contacts */}
           <div className={styles.contactRow}>
             <svg
               className={styles.icon}
@@ -137,14 +142,22 @@ export default function Location() {
           </div>
         </div>
 
-        {/* ── Mappa ─────────────────────────────────── */}
+        {/* Map */}
         <div className={styles.mapWrap}>
+          {!mapLoaded && (
+            <div className={styles.mapSkeleton} aria-hidden="true" />
+          )}
           <iframe
+            key={currentLocation.mapEmbedUrl}
             src={currentLocation.mapEmbedUrl}
-            className={styles.map}
+            className={[styles.map, mapLoaded && styles.mapVisible]
+              .filter(Boolean)
+              .join(" ")}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title={`${t("location_map_btn")} ${currentLocation.name}`}
+            onLoad={() => setMapLoaded(true)}
           />
         </div>
       </div>

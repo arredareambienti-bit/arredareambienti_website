@@ -132,7 +132,39 @@ export default function CookiePolicyPage() {
             </section>
 
             <section className={styles.section}>
-              <h2>4. Come gestire o disabilitare i cookie</h2>
+              <h2>4. Trasferimento dei dati al di fuori dell'Unione Europea</h2>
+              <p>
+                Alcuni dei servizi di terze parti citati (Google LLC ed EmailJS
+                Ltd.) hanno sede negli Stati Uniti d'America. L'utilizzo di
+                tali servizi comporta un trasferimento di dati personali
+                (incluso l'indirizzo IP) al di fuori dello Spazio Economico
+                Europeo.
+              </p>
+              <p>
+                Il trasferimento avviene sulla base delle garanzie previste
+                dagli articoli 45 e 46 del GDPR. In particolare, Google LLC ed
+                EmailJS Ltd. risultano certificati nell'ambito del{" "}
+                <a
+                  href="https://www.dataprivacyframework.gov/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  EU-U.S. Data Privacy Framework
+                </a>
+                {" "}(decisione di adeguatezza della Commissione Europea del 10
+                luglio 2023) e applicano inoltre le Clausole Contrattuali
+                Standard (SCC) approvate dalla Commissione Europea.
+              </p>
+              <p>
+                Per ulteriori informazioni sulle modalità di trattamento
+                applicate da questi soggetti si rimanda alle rispettive
+                informative privacy linkate sopra.
+              </p>
+            </section>
+
+            <section className={styles.section}>
+              <h2>5. Come gestire o disabilitare i cookie</h2>
               <p>
                 L'utente può gestire le preferenze sui cookie direttamente dal proprio browser.
                 Di seguito i link alle istruzioni dei principali browser:
@@ -166,7 +198,7 @@ export default function CookiePolicyPage() {
             </section>
 
             <section className={styles.section}>
-              <h2>5. Modifiche alla presente policy</h2>
+              <h2>6. Modifiche alla presente policy</h2>
               <p>
                 Il Titolare si riserva il diritto di modificare questa Cookie Policy in
                 qualsiasi momento. Le modifiche hanno effetto dalla data di pubblicazione

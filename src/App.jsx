@@ -10,6 +10,7 @@ import Location from "./components/Location";
 import Footer from "./components/Footer";
 import CategoryPage from "./pages/CategoryPage";
 import CookiePolicyPage from "./pages/CookiePolicyPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import CookieBanner from "./components/CookieBanner";
 import FloatingButtons from "./components/FloatingButtons";
 import "./App.css";
@@ -39,6 +40,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/categoria/:slug" element={<CategoryPage />} />
           <Route path="/cookie-policy" element={<CookiePolicyPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         </Routes>
         <CookieBanner />
         <FloatingButtons />

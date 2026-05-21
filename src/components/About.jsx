@@ -20,10 +20,14 @@ export default function About() {
         <div className={styles.grid}>
           <div className={styles.imageCol}>
             <div className={styles.imageWrap}>
+              {/* TODO: sostituire con foto reale del laboratorio/artigiani quando disponibile */}
               <img
-                src="https://picsum.photos/seed/craftsman/600/750"
-                alt="Il nostro laboratorio"
+                src="/assets/living_room/IMG-20260420-WA0045.jpg"
+                alt={t("about_image_alt")}
                 className={styles.image}
+                loading="lazy"
+                width="600"
+                height="750"
               />
             </div>
             <div className={styles.imageAccent} />

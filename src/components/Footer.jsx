@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useT } from "../i18n/useT";
+import { openCookieBanner } from "../utils/cookieConsent";
 import styles from "./Footer.module.css";
 
 function IconInstagram() {
@@ -37,22 +38,13 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.top}>
-          {/* ── Brand ─────────────────────────────── */}
+          {/* Brand */}
           <div className={styles.brand}>
             <a href="/" className={styles.logo}>
               <span className={styles.logoMain}>Arredare</span>
               <span className={styles.logoAccent}>Ambienti</span>
             </a>
-            <p className={styles.tagline}>
-              {t("footer_tagline")
-                .split("\n")
-                .map((line, i) => (
-                  <span key={i}>
-                    {line}
-                    {i === 0 && <br />}
-                  </span>
-                ))}
-            </p>
+            <p className={styles.tagline}>{t("footer_tagline")}</p>
 
             <div className={styles.social}>
               <a
@@ -76,7 +68,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ── Orari ─────────────────────────────── */}
+          {/* Hours */}
           <div className={styles.col}>
             <h4 className={styles.colTitle}>{t("footer_hours_title")}</h4>
             <ul className={styles.hoursList}>
@@ -90,7 +82,7 @@ export default function Footer() {
             <p className={styles.hoursNote}>{t("footer_hours_note")}</p>
           </div>
 
-          {/* ── Colonne link ──────────────────────── */}
+          {/* Link columns */}
           {cols.map((col) => (
             <div key={col.title} className={styles.col}>
               <h4 className={styles.colTitle}>{col.title}</h4>
@@ -113,15 +105,19 @@ export default function Footer() {
             01256620772 — Gravina in Puglia
           </span>
           <div className={styles.legal}>
-            <a href="#" className={styles.legalLink}>
+            <Link to="/privacy-policy" className={styles.legalLink}>
               {t("footer_privacy")}
-            </a>
+            </Link>
             <Link to="/cookie-policy" className={styles.legalLink}>
               {t("footer_cookie")}
             </Link>
-            <a href="#" className={styles.legalLink}>
-              {t("footer_terms")}
-            </a>
+            <button
+              type="button"
+              className={styles.legalLink}
+              onClick={openCookieBanner}
+            >
+              {t("footer_manage_cookies")}
+            </button>
           </div>
         </div>
       </div>

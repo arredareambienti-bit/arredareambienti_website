@@ -11,13 +11,13 @@ export const translations = {
 
     // Hero
     hero_logo_alt: "Arredare Ambienti",
-    hero_eyebrow: "— Arredamento di qualità dal 1987",
-    hero_title: "Arreda il tuo spazio con stile",
-    hero_title_em: "stile",
+    hero_eyebrow: "— Da Gravina in Puglia, dal 1987",
+    hero_title: "Mobili artigianali pensati per durare una vita",
+    hero_title_em: "durare una vita",
     hero_subtitle:
-      "Mobili artigianali e design contemporaneo per trasformare ogni ambiente in un luogo che racconta chi sei.",
+      "Quasi quarant'anni di mestiere, materiali scelti a mano e progetti su misura: arrediamo la tua casa come faremmo la nostra.",
     hero_cta1: "Scopri le collezioni",
-    hero_cta2: "Richiedi preventivo",
+    hero_cta2: "Richiedi un preventivo",
 
     // Products
     products_label: "Prodotti in evidenza",
@@ -37,6 +37,8 @@ export const translations = {
       "Dal 1987 trasformiamo legni pregiati e materiali di qualità in pezzi unici che abitano le case di migliaia di famiglie italiane.",
     about_body:
       "Arredare Ambienti nasce da una passione per il bello e il durevole. Ogni mobile che produciamo porta con sé ore di lavorazione artigianale, scelta meticolosa dei materiali e attenzione per ogni dettaglio. Non vendiamo solo mobili — ti aiutiamo a costruire il tuo spazio ideale.",
+    about_image_alt:
+      "Ambiente arredato da Arredare Ambienti — esempio di realizzazione artigianale",
     about_stats: [
       { value: "35+", label: "anni di esperienza" },
       { value: "10k+", label: "clienti soddisfatti" },
@@ -91,11 +93,13 @@ export const translations = {
     contact_message_ph: "Descrivi il tuo progetto o cosa stai cercando...",
     contact_send: "Invia messaggio",
     contact_ok_title: "Messaggio inviato!",
-    contact_ok_btn: "Invia un altro messaggio",
     contact_sending: "Invio in corso...",
     contact_error: "Invio fallito. Riprova o contattaci direttamente per email.",
     contact_email_invalid: "Inserisci un indirizzo email valido.",
     contact_phone_invalid: "Inserisci un numero valido (max 10 cifre).",
+    contact_privacy_pre: "Ho letto la ",
+    contact_privacy_link: "Privacy Policy",
+    contact_privacy_post: " e acconsento al trattamento dei miei dati personali per rispondere alla richiesta.",
     contact_team_title: "Parla con noi",
     contact_team: [
       { name: "Paolo", role: "Designer",    phone: PHONE_PAOLO },
@@ -128,18 +132,23 @@ export const translations = {
     ],
     location_map_btn: "Visualizza mappa di",
 
+    // Floating buttons
+    wa_message: "Ciao! Vorrei avere maggiori informazioni.",
+    wa_aria_label: "Contattaci su WhatsApp",
+
     // Cookie banner
-    cookie_text: "Utilizziamo i cookie per migliorare la tua esperienza di navigazione e analizzare il traffico del sito.",
+    cookie_text: "Questo sito utilizza cookie tecnici necessari al funzionamento. Nessuna profilazione né analisi del traffico.",
     cookie_policy: "Cookie Policy",
-    cookie_accept: "Accetta",
-    cookie_decline: "Rifiuta",
+    cookie_accept: "Accetta tutto",
+    cookie_decline: "Rifiuta tutto",
+    cookie_close_aria: "Chiudi senza accettare (equivale a rifiuto)",
 
     // Footer
     footer_tagline:
       "Arredamento artigianale di qualità.\nTrasformiamo ogni spazio in un luogo unico dal 1987.",
     footer_hours_title: "Orari di apertura",
     footer_hours: [
-      { days: "Lun – Ven", time: "9:00 – 19:00" },
+      { days: "Lunedì – Venerdì", time: "9:00 – 19:00" },
       { days: "Sabato", time: "9:00 – 19:00" },
       { days: "Domenica", time: "10:00 – 17:00" },
     ],
@@ -170,7 +179,7 @@ export const translations = {
     ],
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
-    footer_terms: "Termini di servizio",
+    footer_manage_cookies: "Gestisci cookie",
 
     // CategoryPage
     cat_home: "Home",
@@ -200,11 +209,11 @@ export const translations = {
 
     // Hero
     hero_logo_alt: "Arredare Ambienti",
-    hero_eyebrow: "— Quality furniture since 1987",
-    hero_title: "Furnish your space with style",
-    hero_title_em: "style",
+    hero_eyebrow: "— From Gravina in Puglia, since 1987",
+    hero_title: "Handcrafted furniture built to last a lifetime",
+    hero_title_em: "last a lifetime",
     hero_subtitle:
-      "Handcrafted furniture and contemporary design to transform every room into a place that tells your story.",
+      "Almost forty years of craft, hand-picked materials and bespoke projects: we furnish your home as we would our own.",
     hero_cta1: "Explore collections",
     hero_cta2: "Get a quote",
 
@@ -226,6 +235,8 @@ export const translations = {
       "Since 1987 we have transformed fine woods and quality materials into unique pieces that live in the homes of thousands of Italian families.",
     about_body:
       "Arredare Ambienti was born from a passion for beauty and durability. Every piece of furniture we produce carries hours of artisan work, meticulous material selection, and attention to every detail. We don't just sell furniture — we help you build your ideal space.",
+    about_image_alt:
+      "Interior furnished by Arredare Ambienti — example of artisan craftsmanship",
     about_stats: [
       { value: "35+", label: "years of experience" },
       { value: "10k+", label: "satisfied customers" },
@@ -280,11 +291,13 @@ export const translations = {
     contact_message_ph: "Describe your project or what you are looking for...",
     contact_send: "Send message",
     contact_ok_title: "Message sent!",
-    contact_ok_btn: "Send another message",
     contact_sending: "Sending...",
     contact_error: "Failed to send. Please try again or contact us directly by email.",
     contact_email_invalid: "Please enter a valid email address.",
     contact_phone_invalid: "Please enter a valid phone number (max 10 digits).",
+    contact_privacy_pre: "I have read the ",
+    contact_privacy_link: "Privacy Policy",
+    contact_privacy_post: " and consent to the processing of my personal data to handle this request.",
     contact_team_title: "Talk to us",
     contact_team: [
       { name: "Paolo", role: "Designer",          phone: PHONE_PAOLO },
@@ -317,18 +330,23 @@ export const translations = {
     ],
     location_map_btn: "View map of",
 
+    // Floating buttons
+    wa_message: "Hello! I would like more information.",
+    wa_aria_label: "Contact us on WhatsApp",
+
     // Cookie banner
-    cookie_text: "We use cookies to improve your browsing experience and analyze site traffic.",
+    cookie_text: "This site uses technical cookies required for its operation. No profiling or traffic analytics.",
     cookie_policy: "Cookie Policy",
-    cookie_accept: "Accept",
-    cookie_decline: "Decline",
+    cookie_accept: "Accept all",
+    cookie_decline: "Reject all",
+    cookie_close_aria: "Close without accepting (equivalent to reject)",
 
     // Footer
     footer_tagline:
       "Quality handcrafted furniture.\nTransforming every space into a unique place since 1987.",
     footer_hours_title: "Opening hours",
     footer_hours: [
-      { days: "Mon – Fri", time: "9:00 – 19:00" },
+      { days: "Monday – Friday", time: "9:00 – 19:00" },
       { days: "Saturday", time: "9:00 – 19:00" },
       { days: "Sunday", time: "10:00 – 17:00" },
     ],
@@ -354,7 +372,7 @@ export const translations = {
     ],
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
-    footer_terms: "Terms of Service",
+    footer_manage_cookies: "Manage cookies",
 
     // CategoryPage
     cat_home: "Home",

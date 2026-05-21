@@ -5,11 +5,11 @@
 }
 
 .label {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #000;
+  color: var(--dark);
 }
 
 .required {
@@ -38,15 +38,16 @@
 }
 
 .inputError {
-  border-color: #c0392b;
+  border-color: var(--danger);
 }
 
 .inputError:focus {
-  border-color: #c0392b;
-  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px rgba(156, 36, 25, 0.15);
 }
 
 .errorMsg {
-  font-size: 0.75rem;
-  color: #c0392b;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--danger);
 }

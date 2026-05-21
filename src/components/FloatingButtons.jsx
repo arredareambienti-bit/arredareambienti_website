@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import { WA_NUMBER } from "../data/contacts";
+import { useT } from "../i18n/useT";
 import styles from "./FloatingButtons.module.css";
-
-const WA_MESSAGE = encodeURIComponent("Ciao! Vorrei avere maggiori informazioni.");
-const WA_URL = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`;
 
 function IconWhatsApp() {
   return (
@@ -24,6 +22,7 @@ function IconArrowUp() {
 }
 
 export default function FloatingButtons() {
+  const t = useT();
   const [showTop, setShowTop] = useState(false);
 
   useEffect(() => {
@@ -33,15 +32,16 @@ export default function FloatingButtons() {
   }, []);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(t("wa_message"))}`;
 
   return (
     <>
       <a
-        href={WA_URL}
+        href={waUrl}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.whatsapp}
-        aria-label="Contattaci su WhatsApp"
+        aria-label={t("wa_aria_label")}
       >
         <IconWhatsApp />
       </a>
