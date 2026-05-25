@@ -94,16 +94,18 @@ export const translations = {
     contact_send: "Invia messaggio",
     contact_ok_title: "Messaggio inviato!",
     contact_sending: "Invio in corso...",
-    contact_error: "Invio fallito. Riprova o contattaci direttamente per email.",
+    contact_error:
+      "Invio fallito. Riprova o contattaci direttamente per email.",
     contact_email_invalid: "Inserisci un indirizzo email valido.",
     contact_phone_invalid: "Inserisci un numero valido (max 10 cifre).",
     contact_privacy_pre: "Ho letto la ",
     contact_privacy_link: "Privacy Policy",
-    contact_privacy_post: " e acconsento al trattamento dei miei dati personali per rispondere alla richiesta.",
+    contact_privacy_post:
+      " e acconsento al trattamento dei miei dati personali per rispondere alla richiesta.",
     contact_team_title: "Parla con noi",
     contact_team: [
-      { name: "Paolo", role: "Designer",    phone: PHONE_PAOLO },
-      { name: "Leo",   role: "Arredatore",  phone: PHONE_LEO   },
+      { name: "Paolo", role: "Designer", phone: PHONE_PAOLO },
+      { name: "Leo", role: "Arredatore", phone: PHONE_LEO },
     ],
 
     // Location
@@ -137,7 +139,8 @@ export const translations = {
     wa_aria_label: "Contattaci su WhatsApp",
 
     // Cookie banner
-    cookie_text: "Questo sito utilizza cookie tecnici necessari al funzionamento. Nessuna profilazione né analisi del traffico.",
+    cookie_text:
+      "Questo sito utilizza cookie tecnici necessari al funzionamento. Nessuna profilazione né analisi del traffico.",
     cookie_policy: "Cookie Policy",
     cookie_accept: "Accetta tutto",
     cookie_decline: "Rifiuta tutto",
@@ -153,30 +156,6 @@ export const translations = {
       { days: "Domenica", time: "10:00 – 17:00" },
     ],
     footer_hours_note: "Via Federico Meninni 275 · Gravina in Puglia",
-    footer_cols: [
-      {
-        title: "Azienda",
-        links: [
-          "Chi siamo",
-          "La nostra storia",
-          "Lavora con noi",
-          "Sostenibilità",
-        ],
-      },
-      {
-        title: "Collezioni",
-        links: ["Soggiorno", "Camera da Letto", "Cucina", "Ufficio"],
-      },
-      {
-        title: "Servizi",
-        links: [
-          "Progettazione gratuita",
-          "Consegna e montaggio",
-          "Assistenza post-vendita",
-          "Finanziamento",
-        ],
-      },
-    ],
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
     footer_manage_cookies: "Gestisci cookie",
@@ -185,9 +164,12 @@ export const translations = {
     cat_home: "Home",
     cat_info: [
       { icon: "clock", value: "Lun–Sab 9:00–19:00 · Dom 10:00–17:00" },
-      { icon: "pin",   value: "Via Federico Meninni 275, Gravina in Puglia (BA)" },
+      {
+        icon: "pin",
+        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
+      },
       { icon: "phone", value: PHONE_FISSO },
-      { icon: "mail",  value: EMAIL },
+      { icon: "mail", value: EMAIL },
     ],
     cat_discover: "Scopri",
     cat_gallery_hint: "Vedi galleria",
@@ -292,16 +274,18 @@ export const translations = {
     contact_send: "Send message",
     contact_ok_title: "Message sent!",
     contact_sending: "Sending...",
-    contact_error: "Failed to send. Please try again or contact us directly by email.",
+    contact_error:
+      "Failed to send. Please try again or contact us directly by email.",
     contact_email_invalid: "Please enter a valid email address.",
     contact_phone_invalid: "Please enter a valid phone number (max 10 digits).",
     contact_privacy_pre: "I have read the ",
     contact_privacy_link: "Privacy Policy",
-    contact_privacy_post: " and consent to the processing of my personal data to handle this request.",
+    contact_privacy_post:
+      " and consent to the processing of my personal data to handle this request.",
     contact_team_title: "Talk to us",
     contact_team: [
-      { name: "Paolo", role: "Designer",          phone: PHONE_PAOLO },
-      { name: "Leo",   role: "Interior designer",  phone: PHONE_LEO   },
+      { name: "Paolo", role: "Designer", phone: PHONE_PAOLO },
+      { name: "Leo", role: "Interior designer", phone: PHONE_LEO },
     ],
 
     // Location
@@ -335,7 +319,8 @@ export const translations = {
     wa_aria_label: "Contact us on WhatsApp",
 
     // Cookie banner
-    cookie_text: "This site uses technical cookies required for its operation. No profiling or traffic analytics.",
+    cookie_text:
+      "This site uses technical cookies required for its operation. No profiling or traffic analytics.",
     cookie_policy: "Cookie Policy",
     cookie_accept: "Accept all",
     cookie_decline: "Reject all",
@@ -351,25 +336,6 @@ export const translations = {
       { days: "Sunday", time: "10:00 – 17:00" },
     ],
     footer_hours_note: "Via Federico Meninni 275 · Gravina in Puglia",
-    footer_cols: [
-      {
-        title: "Company",
-        links: ["About us", "Our story", "Work with us", "Sustainability"],
-      },
-      {
-        title: "Collections",
-        links: ["Living Room", "Bedroom", "Kitchen", "Office"],
-      },
-      {
-        title: "Services",
-        links: [
-          "Free design",
-          "Delivery & assembly",
-          "After-sales support",
-          "Financing",
-        ],
-      },
-    ],
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
     footer_manage_cookies: "Manage cookies",
@@ -378,9 +344,12 @@ export const translations = {
     cat_home: "Home",
     cat_info: [
       { icon: "clock", value: "Mon–Sat 9:00–19:00 · Sun 10:00–17:00" },
-      { icon: "pin",   value: "Via Federico Meninni 275, Gravina in Puglia (BA)" },
+      {
+        icon: "pin",
+        value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
+      },
       { icon: "phone", value: PHONE_FISSO },
-      { icon: "mail",  value: EMAIL },
+      { icon: "mail", value: EMAIL },
     ],
     cat_discover: "Explore",
     cat_gallery_hint: "View gallery",

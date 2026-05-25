@@ -31,7 +31,6 @@ function IconFacebook() {
 
 export default function Footer() {
   const t = useT();
-  const cols = t("footer_cols");
   const hours = t("footer_hours");
 
   return (
@@ -81,22 +80,6 @@ export default function Footer() {
             </ul>
             <p className={styles.hoursNote}>{t("footer_hours_note")}</p>
           </div>
-
-          {/* Link columns */}
-          {cols.map((col) => (
-            <div key={col.title} className={styles.col}>
-              <h4 className={styles.colTitle}>{col.title}</h4>
-              <ul className={styles.colList}>
-                {col.links.map((l) => (
-                  <li key={l}>
-                    <a href="#" className={styles.colLink}>
-                      {l}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
 
         <div className={styles.bottom}>
