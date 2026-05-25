@@ -11,8 +11,17 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const INFO_ICONS = {
   clock: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <polyline points="12 6 12 12 16 14" />
     </svg>
   ),
   pin: (
@@ -22,13 +31,30 @@ const INFO_ICONS = {
     </svg>
   ),
   phone: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.09 4.18 2 2 0 0 1 5.07 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" />
     </svg>
   ),
   mail: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="2" y="4" width="20" height="16" rx="2" /><path d="m2 7 10 7 10-7" />
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m2 7 10 7 10-7" />
     </svg>
   ),
 };
@@ -73,9 +99,6 @@ export default function CategoryPage() {
             className={styles.heroImg}
           />
           <div className={styles.heroOverlay} />
-          <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>{L(category.name)}</h1>
-          </div>
         </div>
 
         {/* ── Titolo + descrizione ────────────────────── */}
@@ -134,13 +157,42 @@ export default function CategoryPage() {
           <div className="container">
             <div className={styles.infoBar}>
               {t("cat_info").map((item) => {
-                const icon = <span className={styles.infoIcon}>{INFO_ICONS[item.icon]}</span>;
-                const text = <span className={styles.infoValue}>{item.value}</span>;
+                const icon = (
+                  <span className={styles.infoIcon}>
+                    {INFO_ICONS[item.icon]}
+                  </span>
+                );
+                const text = (
+                  <span className={styles.infoValue}>{item.value}</span>
+                );
                 if (item.icon === "phone")
-                  return <a key={item.icon} href={`tel:${item.value.replace(/\s/g, "")}`} className={styles.infoItem}>{icon}{text}</a>;
+                  return (
+                    <a
+                      key={item.icon}
+                      href={`tel:${item.value.replace(/\s/g, "")}`}
+                      className={styles.infoItem}
+                    >
+                      {icon}
+                      {text}
+                    </a>
+                  );
                 if (item.icon === "mail")
-                  return <a key={item.icon} href={`mailto:${item.value}`} className={styles.infoItem}>{icon}{text}</a>;
-                return <div key={item.icon} className={styles.infoItem}>{icon}{text}</div>;
+                  return (
+                    <a
+                      key={item.icon}
+                      href={`mailto:${item.value}`}
+                      className={styles.infoItem}
+                    >
+                      {icon}
+                      {text}
+                    </a>
+                  );
+                return (
+                  <div key={item.icon} className={styles.infoItem}>
+                    {icon}
+                    {text}
+                  </div>
+                );
               })}
             </div>
           </div>
