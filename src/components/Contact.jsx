@@ -21,8 +21,10 @@ const EMAIL_TITLES = {
   en: "Quote request – Arredare Ambienti",
 };
 
-const isValidEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
-const isValidPhone = (v) => /^\d{6,10}$/.test(v.replace(/[\s\-+().]/g, ""));
+
+
+const isValidEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())
+const isValidPhone = v => /^\d{6,15}$/.test(v.replace(/[\s\-+().]/g, ''))
 
 export default function Contact() {
   const [ref, inView] = useInView();

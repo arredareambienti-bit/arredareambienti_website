@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import { LOCATIONS } from "../data/locations";
 import useInView from "../hooks/useInView";
 import { useT } from "../i18n/useT";
-import { LOCATIONS } from "../data/locations";
 import styles from "./Location.module.css";
 
 export default function Location() {

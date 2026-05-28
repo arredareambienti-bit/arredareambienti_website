@@ -1,19 +1,41 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LangProvider } from "./context/LangContext";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Categories from "./components/Categories";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import "./App.css";
 import About from "./components/About";
-import Testimonials from "./components/Testimonials";
+import Categories from "./components/Categories";
 import Contact from "./components/Contact";
-import Location from "./components/Location";
+import CookieBanner from "./components/CookieBanner";
+import FloatingButtons from "./components/FloatingButtons";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Location from "./components/Location";
+import Navbar from "./components/Navbar";
+import { LangProvider } from "./context/LangContext";
 import CategoryPage from "./pages/CategoryPage";
 import CookiePolicyPage from "./pages/CookiePolicyPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
-import CookieBanner from "./components/CookieBanner";
-import FloatingButtons from "./components/FloatingButtons";
-import "./App.css";
+
+function ScrollToHash() {
+  const { hash, pathname } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      return;
+    }
+    // Elemento non ancora nel DOM (navigazione da un'altra rotta):
+    // aspetta il render e riprova
+    const timer = setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 80);
+    return () => clearTimeout(timer);
+  }, [hash, pathname]);
+
+  return null;
+}
 
 function HomePage() {
   return (
@@ -36,6 +58,7 @@ function App() {
   return (
     <LangProvider>
       <BrowserRouter>
+        <ScrollToHash />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/categoria/:slug" element={<CategoryPage />} />

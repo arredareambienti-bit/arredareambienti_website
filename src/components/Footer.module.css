@@ -1,18 +1,24 @@
 .footer {
   background: var(--dark);
-  padding: 80px 0 0;
+  padding: 88px 0 0;
 }
 
-/* --- Top grid --- */
+/* ── Top grid ──────────────────────────────────────────────── */
+/*
+  5 colonne desktop:  Brand (largo) | Orari | Nav | Social | Qualità
+  Tablet (≤1100px):   Brand full-row + 2×2
+  Mobile (≤640px):    Brand full-row + 1 colonna ciascuno (stacked)
+*/
 .top {
   display: grid;
-  grid-template-columns: 1.6fr 1.2fr 1fr 1fr 1fr;
-  gap: 40px;
-  padding-bottom: 64px;
+  grid-template-columns: 1.5fr 1.1fr 1fr 1fr 1fr;
+  column-gap: 56px;   /* spazio orizzontale generoso */
+  row-gap: 48px;
+  padding-bottom: 72px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* --- Brand column --- */
+/* ── Brand ──────────────────────────────────────────────────── */
 .brand {
   display: flex;
   flex-direction: column;
@@ -25,78 +31,18 @@
   font-weight: 700;
 }
 
-.logoMain  { color: var(--white); }
-.logoAccent { color: var(--tan); }
+.logoMain   { color: var(--white); }
+.logoAccent { color: var(--tan);   }
 
 .tagline {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.5);
-  line-height: 1.7;
+  line-height: 1.75;
   white-space: pre-line;
+  max-width: 26ch;
 }
 
-.social {
-  display: flex;
-  gap: 10px;
-}
-
-.socialLink {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: border-color var(--transition), color var(--transition), background var(--transition);
-}
-
-.socialLink svg {
-  width: 18px;
-  height: 18px;
-}
-
-.socialLink:hover {
-  border-color: var(--tan);
-  color: var(--tan);
-  background: rgba(200, 168, 130, 0.1);
-}
-
-/* --- Orari ---------------------------------------- */
-.hoursList {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.hoursRow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-}
-
-.hoursDays {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.hoursTime {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--tan);
-  white-space: nowrap;
-}
-
-.hoursNote {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.3);
-  margin-top: 4px;
-}
-
-/* --- Nav columns --- */
+/* ── Colonne generiche ──────────────────────────────────────── */
 .col {
   display: flex;
   flex-direction: column;
@@ -114,7 +60,7 @@
 .colList {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 13px;
 }
 
 .colLink {
@@ -125,7 +71,120 @@
 
 .colLink:hover { color: var(--tan); }
 
-/* --- Bottom bar --- */
+/* ── Orari ──────────────────────────────────────────────────── */
+.hoursList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.hoursRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.hoursDays {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hoursTime {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--tan);
+  white-space: nowrap;
+}
+
+/* ── Indirizzo ──────────────────────────────────────────────── */
+.addressLink {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.83rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.55;
+  transition: color var(--transition);
+}
+
+.addressLink svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--tan);
+}
+
+.addressLink:hover { color: var(--white); }
+
+/* ── Social (colonna) ───────────────────────────────────────── */
+.socialColLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition);
+}
+
+.socialColLink svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.socialColLink:hover { color: var(--tan); }
+
+/* ── Badge / Qualità ────────────────────────────────────────── */
+.badgeList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.badgeItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.badgeIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--tan);
+}
+
+.badgeIcon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.badgeLabel {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.3;
+}
+
+.badgeDesc {
+  display: block;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* ── Bottom bar ─────────────────────────────────────────────── */
 .bottom {
   display: flex;
   align-items: center;
@@ -154,18 +213,56 @@
 
 .legalLink:hover { color: rgba(255, 255, 255, 0.6); }
 
-/* --- Responsive --- */
+/* ── Responsive ─────────────────────────────────────────────── */
+
+/* Tablet: brand full-row, poi 2 colonne per le 4 restanti */
 @media (max-width: 1100px) {
-  .top { grid-template-columns: 1fr 1fr 1fr; }
-  .brand { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 32px; }
-  .social { margin-left: auto; }
+  .top {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;   /* occupa tutta la riga */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .tagline { max-width: none; }
 }
 
+/* Phablet: brand full + colonne 1fr 1fr */
 @media (max-width: 700px) {
   .footer { padding-top: 56px; }
-  .top { grid-template-columns: 1fr 1fr; gap: 32px; }
-  .brand { grid-column: 1 / -1; flex-direction: column; }
-  .social { margin-left: 0; }
-  .bottom { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .legal { flex-wrap: wrap; gap: 16px; }
+
+  .top {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+    row-gap: 36px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Mobile stretto: tutto in una colonna */
+@media (max-width: 440px) {
+  .top {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .legal { flex-wrap: wrap; gap: 14px; }
 }

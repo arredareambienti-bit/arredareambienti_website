@@ -1,13 +1,13 @@
-import { useParams, Link, Navigate } from "react-router-dom";
 import { useState } from "react";
-import { CATEGORIES_DATA } from "../data/categories";
-import { useLang } from "../context/LangContext";
-import { useT } from "../i18n/useT";
-import Navbar from "../components/Navbar";
+import { Link, Navigate, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import ProductModal from "../components/ProductModal";
-import styles from "./CategoryPage.module.css";
 import ScrollToTop from "../components/ScrollToTop";
+import { useLang } from "../context/LangContext";
+import { CATEGORIES_DATA } from "../data/categories";
+import { useT } from "../i18n/useT";
+import styles from "./CategoryPage.module.css";
 
 const INFO_ICONS = {
   clock: (

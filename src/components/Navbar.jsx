@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useLang } from "../context/LangContext";
 import { useT } from "../i18n/useT";
+import { getNavLinks } from "../config/navigation";
 import Button from "./ui/Button";
 import styles from "./Navbar.module.css";
 
@@ -17,12 +18,7 @@ export default function Navbar() {
   // On non-home pages the navbar always shows in "scrolled" (white) style
   const showScrolled = !isHome || scrolled;
 
-  const NAV_LINKS = [
-    { label: t("nav_collections"), href: "/#collezioni" },
-    { label: t("nav_about"), href: "/#chi-siamo" },
-    { label: t("nav_location"), href: "/#dove-siamo" },
-    { label: t("nav_contact"), href: "/#contatti" },
-  ];
+  const NAV_LINKS = getNavLinks(t);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -55,14 +51,14 @@ export default function Navbar() {
             .join(" ")}
         >
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={link.href}
+              to={link.href}
               className={styles.navLink}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <Button
             variant={showScrolled ? "primary" : "outlineLight"}

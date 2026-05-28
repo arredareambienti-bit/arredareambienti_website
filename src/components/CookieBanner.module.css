@@ -39,7 +39,7 @@
 }
 
 .close:focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--tan);
   outline-offset: 2px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .link:hover {
-  color: var(--gold);
+  color: var(--tan);
 }
 
 .actions {
@@ -88,7 +88,7 @@
 
 .btnDecline:hover,
 .btnAccept:hover {
-  background: var(--gold);
+  background: var(--tan);
 }
 
 @media (max-width: 600px) {

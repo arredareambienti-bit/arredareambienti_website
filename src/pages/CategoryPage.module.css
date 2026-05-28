@@ -222,14 +222,14 @@
 }
 
 a.infoItem:hover {
-  color: var(--accent);
+  color: var(--brown);
 }
 
 .infoIcon {
   width: 15px;
   height: 15px;
   flex-shrink: 0;
-  color: var(--accent);
+  color: var(--brown);
   display: flex;
 }
 

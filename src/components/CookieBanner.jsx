@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useT } from '../i18n/useT'
 import { EVENT_OPEN, getConsent, setConsent } from '../utils/cookieConsent'

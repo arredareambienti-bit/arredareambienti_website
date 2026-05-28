@@ -99,7 +99,7 @@
 }
 
 .teamCard:hover {
-  border-color: var(--accent);
+  border-color: var(--brown);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
@@ -139,7 +139,7 @@
 
 .teamPhone {
   font-size: 0.8rem;
-  color: var(--accent);
+  color: var(--brown);
   font-weight: 500;
   white-space: nowrap;
   flex-shrink: 0;
