@@ -22,7 +22,7 @@ export default function About() {
             <div className={styles.imageWrap}>
               {/* TODO: sostituire con foto reale del laboratorio/artigiani quando disponibile */}
               <img
-                src="/assets/living_room/IMG-20260420-WA0045.jpg"
+                src="/assets/kitchen/kitchen_009.jpg"
                 alt={t("about_image_alt")}
                 className={styles.image}
                 loading="lazy"
@@ -35,7 +35,6 @@ export default function About() {
 
           <div className={styles.content}>
             <SectionHeader
-              label={t("about_label")}
               title={t("about_title")}
               subtitle={t("about_subtitle")}
             />

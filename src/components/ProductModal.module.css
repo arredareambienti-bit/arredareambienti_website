@@ -11,8 +11,13 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* ── Modal box ─────────────────────────────────── */
@@ -31,8 +36,15 @@
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ── Chiudi ─────────────────────────────────────── */
@@ -54,8 +66,16 @@
   transition: background var(--transition), transform var(--transition);
 }
 
-.closeBtn:hover { background: var(--white); transform: scale(1.08); }
-.closeBtn svg { width: 16px; height: 16px; color: var(--dark); }
+.closeBtn:hover {
+  background: var(--white);
+  transform: scale(1.08);
+}
+
+.closeBtn svg {
+  width: 16px;
+  height: 16px;
+  color: var(--dark);
+}
 
 /* ── Area immagine ──────────────────────────────── */
 .imgArea {
@@ -69,15 +89,22 @@
 .img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   inset: 0;
   animation: imgFade 0.3s ease;
 }
 
 @keyframes imgFade {
-  from { opacity: 0; transform: scale(1.03); }
-  to   { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* ── Frecce ─────────────────────────────────────── */
@@ -99,11 +126,24 @@
   z-index: 2;
 }
 
-.arrow:hover { background: var(--white); transform: translateY(-50%) scale(1.08); }
-.arrow svg { width: 20px; height: 20px; color: var(--dark); }
+.arrow:hover {
+  background: var(--white);
+  transform: translateY(-50%) scale(1.08);
+}
 
-.arrowLeft  { left: 16px; }
-.arrowRight { right: 16px; }
+.arrow svg {
+  width: 20px;
+  height: 20px;
+  color: var(--dark);
+}
+
+.arrowLeft {
+  left: 16px;
+}
+
+.arrowRight {
+  right: 16px;
+}
 
 /* ── Contatore ──────────────────────────────────── */
 .counter {
@@ -169,10 +209,20 @@
   opacity: 0.55;
 }
 
-.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-.thumbActive { border-color: var(--brown); opacity: 1; }
-.thumb:hover { opacity: 0.85; }
+.thumbActive {
+  border-color: var(--brown);
+  opacity: 1;
+}
+
+.thumb:hover {
+  opacity: 0.85;
+}
 
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 860px) {
@@ -181,15 +231,41 @@
     max-height: 88vh;
     overflow-y: auto;
   }
-  .imgArea { min-height: 380px; position: relative; }
-  .img { position: relative; height: 380px; }
-  .info { padding: 28px 24px 32px; }
-  .price { margin-bottom: 24px; }
+
+  .imgArea {
+    min-height: 380px;
+    position: relative;
+  }
+
+  .img {
+    position: relative;
+    height: 380px;
+  }
+
+  .info {
+    padding: 28px 24px 32px;
+  }
+
+  .price {
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 480px) {
-  .overlay { padding: 0; }
-  .modal { border-radius: 0; max-height: 100dvh; }
-  .imgArea { min-height: 300px; }
-  .img { height: 300px; }
+  .overlay {
+    padding: 0;
+  }
+
+  .modal {
+    border-radius: 0;
+    max-height: 100dvh;
+  }
+
+  .imgArea {
+    min-height: 300px;
+  }
+
+  .img {
+    height: 300px;
+  }
 }

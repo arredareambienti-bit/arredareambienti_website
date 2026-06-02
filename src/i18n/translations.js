@@ -11,11 +11,12 @@ export const translations = {
 
     // Hero
     hero_logo_alt: "Arredare Ambienti",
-    hero_eyebrow: "— Da Gravina in Puglia, dal 1987",
-    hero_title: "Mobili artigianali pensati per durare una vita",
-    hero_title_em: "durare una vita",
+    hero_eyebrow:
+      "- IL MEGLIO DELL'ARREDAMENTO ARTIGIANALE A GRAVINA IN PUGLIA",
+    hero_title: "Design, funzionalità e ",
+    hero_title_em: "materiali di pregio",
     hero_subtitle:
-      "Quasi quarant'anni di mestiere, materiali scelti a mano e progetti su misura: arrediamo la tua casa come faremmo la nostra.",
+      "Trasforma la tua casa nel posto che hai sempre sognato. Vieni a scoprire la nostra collezione!",
     hero_cta1: "Scopri le collezioni",
     hero_cta2: "Richiedi un preventivo",
 
@@ -32,23 +33,20 @@ export const translations = {
 
     // About
     about_label: "Chi siamo",
-    about_title: "Arredamento di qualità per ogni ambiente",
+    about_title:
+      '"Arredare è l’arte di disporre le cose belle in modo confortevole"',
     about_subtitle:
       "Siamo un punto di riferimento per l'arredamento a Gravina in Puglia: selezioniamo prodotti di qualità e affianchiamo i nostri clienti in ogni fase della scelta.",
     about_body:
       "In Arredare Ambienti crediamo che ogni ambiente racconti qualcosa di chi lo abita. Per questo non ci limitiamo a vendere mobili: ascoltiamo le esigenze di ogni cliente, proponiamo soluzioni su misura e curiamo ogni dettaglio dalla scelta dei materiali alla composizione finale. Il nostro showroom a Gravina in Puglia è aperto a chi vuole toccare con mano la qualità prima di decidere.",
-    about_image_alt:
-      "Ambiente arredato da Arredare Ambienti — showroom di Gravina in Puglia",
+    about_image_alt: "Venite a scoprire la nostra collezione!",
     about_stats: [
       // TODO: inserire il numero corretto di anni di attività (es. { value: "3+", label: "anni di attività" })
       // { value: "??", label: "anni di attività" },
-
       // TODO: inserire il numero approssimativo di clienti seguiti
       // { value: "??", label: "clienti seguiti" },
-
       // TODO: inserire il numero di brand/produttori trattati in showroom
       // { value: "??", label: "brand selezionati" },
-
       // TODO: inserire la metratura dello showroom se disponibile (es. "400 m²")
       // { value: "??", label: "m² di showroom" },
     ],
@@ -155,7 +153,7 @@ export const translations = {
 
     // Footer
     footer_tagline:
-      "Arredamento artigianale di qualità.\nTrasformiamo ogni spazio in un luogo unico dal 1987.",
+      "Arredamento artigianale di qualità.\nTrasformiamo ogni spazio in un luogo da sogno.",
     footer_hours_title: "Orari di apertura",
     footer_hours: [
       { days: "Lunedì – Venerdì", time: "9:00 – 19:00" },
@@ -165,13 +163,6 @@ export const translations = {
     footer_address: "Via Federico Meninni 275 · Gravina in Puglia",
     footer_nav_title: "Esplora",
     footer_social_title: "Seguici",
-    footer_quality_title: "Qualità",
-    footer_badge_since: "Dal 1987",
-    footer_badge_since_desc: "Esperienza artigianale",
-    footer_badge_craft: "Fatto a mano",
-    footer_badge_craft_desc: "Ogni pezzo è unico",
-    footer_badge_showroom: "Showroom",
-    footer_badge_showroom_desc: "Gravina in Puglia",
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
     footer_manage_cookies: "Gestisci cookie",
@@ -207,11 +198,11 @@ export const translations = {
 
     // Hero
     hero_logo_alt: "Arredare Ambienti",
-    hero_eyebrow: "— From Gravina in Puglia, since 1987",
-    hero_title: "Handcrafted furniture built to last a lifetime",
-    hero_title_em: "last a lifetime",
+    hero_eyebrow: "- THE BEST IN HANDCRAFTED FURNITURE IN GRAVINA IN PUGLIA",
+    hero_title: "Design, functionality and ",
+    hero_title_em: "premium materials",
     hero_subtitle:
-      "Almost forty years of craft, hand-picked materials and bespoke projects: we furnish your home as we would our own.",
+      "Transform your home into the place you've always dreamed of. Come and discover our collection!",
     hero_cta1: "Explore collections",
     hero_cta2: "Get a quote",
 
@@ -228,7 +219,8 @@ export const translations = {
 
     // About
     about_label: "About us",
-    about_title: "Quality furniture for every room",
+    about_title:
+      '"Furnishing is the art of arranging beautiful things in a comfortable way"',
     about_subtitle:
       "We are a furniture destination in Gravina in Puglia: we select quality products and guide our customers through every step of their choice.",
     about_body:
@@ -238,13 +230,10 @@ export const translations = {
     about_stats: [
       // TODO: insert the correct number of years in business (e.g. { value: "3+", label: "years in business" })
       // { value: "??", label: "years in business" },
-
       // TODO: insert approximate number of customers served
       // { value: "??", label: "customers served" },
-
       // TODO: insert number of brands / manufacturers carried in showroom
       // { value: "??", label: "selected brands" },
-
       // TODO: insert showroom floor area if available (e.g. "400 m²")
       // { value: "??", label: "m² showroom" },
     ],
@@ -351,7 +340,7 @@ export const translations = {
 
     // Footer
     footer_tagline:
-      "Quality handcrafted furniture.\nTransforming every space into a unique place since 1987.",
+      "Quality handcrafted furniture.\nTransforming every space into a dream place.",
     footer_hours_title: "Opening hours",
     footer_hours: [
       { days: "Monday – Friday", time: "9:00 – 19:00" },
@@ -361,13 +350,6 @@ export const translations = {
     footer_address: "Via Federico Meninni 275 · Gravina in Puglia",
     footer_nav_title: "Explore",
     footer_social_title: "Follow us",
-    footer_quality_title: "Quality",
-    footer_badge_since: "Since 1987",
-    footer_badge_since_desc: "Artisan expertise",
-    footer_badge_craft: "Handcrafted",
-    footer_badge_craft_desc: "Every piece is unique",
-    footer_badge_showroom: "Showroom",
-    footer_badge_showroom_desc: "Gravina in Puglia",
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
     footer_manage_cookies: "Manage cookies",

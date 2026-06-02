@@ -1,4 +1,6 @@
-.header { max-width: 600px; }
+.header {
+  max-width: 600px;
+}
 
 .center {
   margin: 0 auto;
@@ -21,7 +23,7 @@
   font-weight: 600;
   color: var(--dark);
   line-height: 1.2;
-  margin-bottom: 16px;
+  margin-bottom: 70px;
 }
 
 .subtitle {
