@@ -35,6 +35,7 @@ export default function About() {
 
           <div className={styles.content}>
             <SectionHeader
+              label={t("about_label")}
               title={t("about_title")}
               subtitle={t("about_subtitle")}
             />
