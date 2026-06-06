@@ -5,6 +5,7 @@ import SectionHeader from "./ui/SectionHeader";
 import Button from "./ui/Button";
 import useInView from "../hooks/useInView";
 import styles from "./Products.module.css";
+import { useLang } from "../context/LangContext";
 
 const ALL_PRODUCTS = [
   {
@@ -57,9 +58,11 @@ export default function Products() {
   const [activeIdx, setActiveIdx] = useState(0);
   const [ref, inView] = useInView();
   const t = useT();
+  const { lang } = useLang();
 
   const filterLabels = t("products_filters");
 
+  const L = (v) => v[lang] ?? v.it;
   const filtered =
     activeIdx === 0
       ? ALL_PRODUCTS
@@ -123,8 +126,8 @@ export default function Products() {
                 </div>
               </div>
               <div className={styles.body}>
-                <span className={styles.category}>{product.category}</span>
-                <h3 className={styles.name}>{product.name}</h3>
+                <span className={styles.category}>{L(product.category)}</span>
+                <h3 className={styles.name}>{L(product.name)}</h3>
               </div>
             </div>
           ))}

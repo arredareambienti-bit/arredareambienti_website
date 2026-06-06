@@ -2,12 +2,15 @@ import { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import { useT } from "../i18n/useT";
 import styles from "./ProductModal.module.css";
+import { useLang } from "../context/LangContext";
 
 export default function ProductModal({ product, onClose }) {
   const [current, setCurrent] = useState(0);
   const t = useT();
   const total = product.images.length;
 
+  const { lang } = useLang();
+  const L = (v) => v[lang] ?? v.it;
   const prev = useCallback(
     () => setCurrent((i) => (i - 1 + total) % total),
     [total],
@@ -37,7 +40,7 @@ export default function ProductModal({ product, onClose }) {
       onClick={onClose}
       role="dialog"
       aria-modal="true"
-      aria-label={product.name}
+      aria-label={L(product.name)}
     >
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
         {/* Close button */}
@@ -64,7 +67,7 @@ export default function ProductModal({ product, onClose }) {
           <img
             key={current}
             src={product.images[current]}
-            alt={`${product.name} – ${t("modal_photo")} ${current + 1}`}
+            alt={`${L(product.name)} – ${t("modal_photo")} ${current + 1}`}
             className={styles.img}
           />
 
@@ -114,7 +117,7 @@ export default function ProductModal({ product, onClose }) {
 
         {/* Product info */}
         <div className={styles.info}>
-          <h2 className={styles.name}>{product.name}</h2>
+          <h2 className={styles.name}>{L(product.name)}</h2>
 
           {total > 1 && (
             <div className={styles.thumbs}>

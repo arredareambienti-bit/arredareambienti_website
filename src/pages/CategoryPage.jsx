@@ -118,12 +118,12 @@ export default function CategoryPage() {
                   key={product.id}
                   className={styles.productCard}
                   onClick={() => setOpenProduct(product)}
-                  aria-label={`${t("cat_gallery_hint")}: ${product.name}`}
+                  aria-label={`${t("cat_gallery_hint")}: ${L(product.name)}`}
                 >
                   <div className={styles.productImgWrap}>
                     <img
                       src={product.images[0]}
-                      alt={product.name}
+                      alt={L(product.name)}
                       className={styles.productImg}
                     />
                     <div className={styles.productHint}>
@@ -144,7 +144,7 @@ export default function CategoryPage() {
                     </div>
                   </div>
                   <div className={styles.productBody}>
-                    <h3 className={styles.productName}>{product.name}</h3>
+                    <h3 className={styles.productName}>{L(product.name)}</h3>
                   </div>
                 </button>
               ))}

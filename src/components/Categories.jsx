@@ -1,38 +1,49 @@
-import { Link } from 'react-router-dom'
-import { useLang } from '../context/LangContext'
-import { useT } from '../i18n/useT'
-import useInView from '../hooks/useInView'
-import { CATEGORIES_DATA } from '../data/categories'
-import styles from './Categories.module.css'
+import { Link } from "react-router-dom";
+import { useLang } from "../context/LangContext";
+import { useT } from "../i18n/useT";
+import useInView from "../hooks/useInView";
+import { CATEGORIES_DATA } from "../data/categories";
+import styles from "./Categories.module.css";
 
 export default function Categories() {
-  const [ref, inView] = useInView()
-  const { lang } = useLang()
-  const t = useT()
+  const [ref, inView] = useInView();
+  const { lang } = useLang();
+  const t = useT();
+
+  // Filtriamo i dati per mostrare nella griglia solo le categorie reali ed escludere le pagine del catalogo
+  const realCategories = CATEGORIES_DATA.filter(
+    (cat) => cat.slug && cat.heroImage,
+  );
 
   return (
     <section
       id="collezioni"
-      className={[styles.section, inView && styles.visible].filter(Boolean).join(' ')}
+      className={[styles.section, inView && styles.visible]
+        .filter(Boolean)
+        .join(" ")}
       ref={ref}
     >
       <div className={styles.grid}>
-        {CATEGORIES_DATA.map((cat, i) => (
+        {realCategories.map((cat, i) => (
           <Link
-            key={cat.id}
+            key={cat.id + "-" + cat.slug} // Chiave univoca combinata visto che gli ID sono identici
             to={`/categoria/${cat.slug}`}
             className={styles.card}
             style={{ transitionDelay: `${i * 0.08}s` }}
           >
-            <img src={cat.heroImage} alt={cat.name[lang] ?? cat.name.it} className={styles.image} />
+            <img
+              src={cat.heroImage}
+              alt={cat.name[lang] ?? cat.name.it}
+              className={styles.image}
+            />
             <div className={styles.overlay} />
             <div className={styles.inner}>
               <h3 className={styles.name}>{cat.name[lang] ?? cat.name.it}</h3>
-              <span className={styles.link}>{t('cat_discover')}</span>
+              <span className={styles.link}>{t("cat_discover")}</span>
             </div>
           </Link>
         ))}
       </div>
     </section>
-  )
+  );
 }
