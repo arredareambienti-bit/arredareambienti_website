@@ -11,8 +11,9 @@
 */
 .top {
   display: grid;
-  grid-template-columns: 1.5fr 1.1fr 1fr 1fr 1fr;
-  column-gap: 56px;   /* spazio orizzontale generoso */
+  grid-template-columns: 1.5fr 1.4fr 1fr 1fr 1fr;
+  column-gap: 56px;
+  /* spazio orizzontale generoso */
   row-gap: 48px;
   padding-bottom: 72px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -31,8 +32,13 @@
   font-weight: 700;
 }
 
-.logoMain   { color: var(--white); }
-.logoAccent { color: var(--tan);   }
+.logoMain {
+  color: var(--white);
+}
+
+.logoAccent {
+  color: var(--tan);
+}
 
 .tagline {
   font-size: 0.9rem;
@@ -69,7 +75,9 @@
   transition: color var(--transition);
 }
 
-.colLink:hover { color: var(--tan); }
+.colLink:hover {
+  color: var(--tan);
+}
 
 /* ── Orari ──────────────────────────────────────────────────── */
 .hoursList {
@@ -82,20 +90,21 @@
 .hoursRow {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 12px;
 }
 
 .hoursDays {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+  min-width: 60px;
 }
 
 .hoursTime {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--tan);
-  white-space: nowrap;
+  white-space: pre-line;
 }
 
 /* ── Indirizzo ──────────────────────────────────────────────── */
@@ -117,7 +126,9 @@
   color: var(--tan);
 }
 
-.addressLink:hover { color: var(--white); }
+.addressLink:hover {
+  color: var(--white);
+}
 
 /* ── Social (colonna) ───────────────────────────────────────── */
 .socialColLink {
@@ -135,7 +146,9 @@
   flex-shrink: 0;
 }
 
-.socialColLink:hover { color: var(--tan); }
+.socialColLink:hover {
+  color: var(--tan);
+}
 
 /* ── Badge / Qualità ────────────────────────────────────────── */
 .badgeList {
@@ -211,7 +224,9 @@
   line-height: inherit;
 }
 
-.legalLink:hover { color: rgba(255, 255, 255, 0.6); }
+.legalLink:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
 
 /* ── Responsive ─────────────────────────────────────────────── */
 
@@ -224,19 +239,24 @@
   }
 
   .brand {
-    grid-column: 1 / -1;   /* occupa tutta la riga */
+    grid-column: 1 / -1;
+    /* occupa tutta la riga */
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 32px;
   }
 
-  .tagline { max-width: none; }
+  .tagline {
+    max-width: none;
+  }
 }
 
 /* Phablet: brand full + colonne 1fr 1fr */
 @media (max-width: 700px) {
-  .footer { padding-top: 56px; }
+  .footer {
+    padding-top: 56px;
+  }
 
   .top {
     grid-template-columns: 1fr 1fr;
@@ -264,5 +284,8 @@
     gap: 16px;
   }
 
-  .legal { flex-wrap: wrap; gap: 14px; }
+  .legal {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
 }

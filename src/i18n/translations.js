@@ -119,9 +119,8 @@ export const translations = {
     location_email: EMAIL,
     location_hours_title: "Orari di apertura",
     location_hours: [
-      { days: "Lunedì – Venerdì", time: "9:00 – 19:00" },
-      { days: "Sabato", time: "9:00 – 19:00" },
-      { days: "Domenica", time: "10:00 – 17:00" },
+      { days: "Lun – Sab", time: "09:00 – 13:00,\n16:30 – 20:30" },
+      { days: "Domenica", time: "Chiuso" },
     ],
     location_list: [
       {
@@ -156,9 +155,8 @@ export const translations = {
       "Arredamento artigianale di qualità.\nTrasformiamo ogni spazio in un luogo da sogno.",
     footer_hours_title: "Orari di apertura",
     footer_hours: [
-      { days: "Lunedì – Venerdì", time: "9:00 – 19:00" },
-      { days: "Sabato", time: "9:00 – 19:00" },
-      { days: "Domenica", time: "10:00 – 17:00" },
+      { days: "Lun – Sab", time: "09:00 – 13:00\n16:30 – 20:30" },
+      { days: "Domenica", time: "Chiuso" },
     ],
     footer_address: "Via Federico Meninni 275 · Gravina in Puglia",
     footer_nav_title: "Esplora",
@@ -170,7 +168,10 @@ export const translations = {
     // CategoryPage
     cat_home: "Home",
     cat_info: [
-      { icon: "clock", value: "Lun–Sab 9:00–19:00 · Dom 10:00–17:00" },
+      {
+        icon: "clock",
+        value: "Lun–Sab 9:00–13:00, 16:30–20:30 · Dom Chiuso",
+      },
       {
         icon: "pin",
         value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
@@ -306,9 +307,8 @@ export const translations = {
     location_email: EMAIL,
     location_hours_title: "Opening hours",
     location_hours: [
-      { days: "Monday – Friday", time: "9:00 – 19:00" },
-      { days: "Saturday", time: "9:00 – 19:00" },
-      { days: "Sunday", time: "10:00 – 17:00" },
+      { days: "Mon – Sat", time: "09:00 – 13:00,\n16:30 – 20:30" },
+      { days: "Sunday", time: "Closed" },
     ],
     location_list: [
       {
@@ -343,9 +343,8 @@ export const translations = {
       "Quality handcrafted furniture.\nTransforming every space into a dream place.",
     footer_hours_title: "Opening hours",
     footer_hours: [
-      { days: "Monday – Friday", time: "9:00 – 19:00" },
-      { days: "Saturday", time: "9:00 – 19:00" },
-      { days: "Sunday", time: "10:00 – 17:00" },
+      { days: "Mon – Sat", time: "09:00 – 13:00\n16:30 – 20:30" },
+      { days: "Sunday", time: "Closed" },
     ],
     footer_address: "Via Federico Meninni 275 · Gravina in Puglia",
     footer_nav_title: "Explore",
@@ -357,7 +356,10 @@ export const translations = {
     // CategoryPage
     cat_home: "Home",
     cat_info: [
-      { icon: "clock", value: "Mon–Sat 9:00–19:00 · Sun 10:00–17:00" },
+      {
+        icon: "clock",
+        value: "Mon–Sat 9:00–13:00, 16:30–20:30 · Sun Closed",
+      },
       {
         icon: "pin",
         value: "Via Federico Meninni 275, Gravina in Puglia (BA)",

@@ -386,6 +386,85 @@ export const CATEGORIES_DATA = [
     ],
   },
 
+  {
+    id: 9,
+    slug: "bagno",
+    name: {
+      it: "Bagno",
+      en: "Bathroom",
+    },
+    description: {
+      it: "Soluzioni per il bagno che uniscono estetica contemporanea e funzionalità. Spazi benessere realizzati con materiali pregiati e design ricercato.",
+      en: "Bathroom solutions combining contemporary aesthetics and functionality. Wellness spaces created with premium materials and refined design.",
+    },
+    heroImage: "/assets/bathroom/bathroom_001.jpg",
+    products: [
+      {
+        id: 9,
+        name: "Vasca freestanding in resina rosa",
+        images: ["/assets/bathroom/bathroom_001.jpg"],
+      },
+      {
+        id: 9,
+        name: "Lavabo monocomando in ceramica bianca",
+        images: ["/assets/bathroom/bathroom_002.jpg"],
+      },
+      {
+        id: 9,
+        name: "Armadietto da parete beige",
+        images: ["/assets/bathroom/bathroom_003.jpg"],
+      },
+      {
+        id: 9,
+        name: "Specchio circolare a LED illuminato",
+        images: ["/assets/bathroom/bathroom_004.jpg"],
+      },
+      {
+        id: 9,
+        name: "Doccia minimal nero con rivestimento beige",
+        images: [
+          "/assets/bathroom/bathroom_005.jpg",
+          "/assets/bathroom/bathroom_006.jpg",
+          "/assets/bathroom/bathroom_007.jpg",
+        ],
+      },
+      {
+        id: 9,
+        name: "Doppio lavabo con mobile bianco e specchi circolari",
+        images: [
+          "/assets/bathroom/bathroom_008.jpg",
+          "/assets/bathroom/bathroom_009.jpg",
+        ],
+      },
+      {
+        id: 9,
+        name: "Sanitari WC moderni in porcellana",
+        images: [
+          "/assets/bathroom/bathroom_010.jpg",
+          "/assets/bathroom/bathroom_011.jpg",
+        ],
+      },
+      {
+        id: 9,
+        name: "Ripostiglio e scaffalature da parete",
+        images: [
+          "/assets/bathroom/bathroom_012.jpg",
+          "/assets/bathroom/bathroom_013.jpg",
+        ],
+      },
+      {
+        id: 9,
+        name: "Bagno completo di lusso con vasca rosa e arredamento",
+        images: [
+          "/assets/bathroom/bathroom_014.jpg",
+          "/assets/bathroom/bathroom_015.jpg",
+          "/assets/bathroom/bathroom_016.jpg",
+          "/assets/bathroom/bathroom_017.jpg",
+        ],
+      },
+    ],
+  },
+
   /* ------------------------------
      CATALOGO — SPOSTATO ALLA FINE
   ------------------------------ */

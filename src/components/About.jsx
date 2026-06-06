@@ -22,7 +22,7 @@ export default function About() {
             <div className={styles.imageWrap}>
               {/* TODO: sostituire con foto reale del laboratorio/artigiani quando disponibile */}
               <img
-                src="/assets/kitchen/kitchen_009.jpg"
+                src="/assets/about.jpg"
                 alt={t("about_image_alt")}
                 className={styles.image}
                 loading="lazy"
