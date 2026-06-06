@@ -169,10 +169,6 @@ export const translations = {
     cat_home: "Home",
     cat_info: [
       {
-        icon: "clock",
-        value: "Lun–Sab 9:00–13:00, 16:30–20:30 · Dom Chiuso",
-      },
-      {
         icon: "pin",
         value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
       },
@@ -356,10 +352,6 @@ export const translations = {
     // CategoryPage
     cat_home: "Home",
     cat_info: [
-      {
-        icon: "clock",
-        value: "Mon–Sat 9:00–13:00, 16:30–20:30 · Sun Closed",
-      },
       {
         icon: "pin",
         value: "Via Federico Meninni 275, Gravina in Puglia (BA)",
