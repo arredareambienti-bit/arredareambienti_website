@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
       <div className={styles.left}>
         <div className={styles.content}>
-          <span className={styles.eyebrow}>{t("hero_eyebrow")}</span>
+          <span className={styles.eyebrow}>{`- ${t("hero_eyebrow")}`}</span>
           <h1 className={styles.title}>
             {t("hero_title").replace(t("hero_title_em"), "").trimEnd()}{" "}
             <em>{t("hero_title_em")}</em>

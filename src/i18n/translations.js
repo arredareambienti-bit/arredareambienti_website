@@ -4,32 +4,24 @@ export const translations = {
   it: {
     // Navbar
     nav_collections: "Collezioni",
+    nav_catalogue: "Catalogo",
     nav_about: "Chi Siamo",
     nav_contact: "Contatti",
     nav_location: "Dove siamo",
     nav_quote: "Richiedi preventivo",
+    nav_lang_aria: "Cambia lingua",
+    nav_menu_open: "Apri menu",
+    nav_menu_close: "Chiudi menu",
 
     // Hero
     hero_logo_alt: "Arredare Ambienti",
-    hero_eyebrow:
-      "- IL MEGLIO DELL'ARREDAMENTO ARTIGIANALE A GRAVINA IN PUGLIA",
+    hero_eyebrow: "IL MEGLIO DELL'ARREDAMENTO ARTIGIANALE A GRAVINA IN PUGLIA",
     hero_title: "Design, funzionalità e ",
     hero_title_em: "materiali di pregio",
     hero_subtitle:
       "Trasforma la tua casa nel posto che hai sempre sognato. Vieni a scoprire la nostra collezione!",
     hero_cta1: "Scopri le collezioni",
     hero_cta2: "Richiedi un preventivo",
-
-    // Products
-    products_label: "Prodotti in evidenza",
-    products_title: "I nostri pezzi più amati",
-    products_subtitle:
-      "Qualità artigianale e design contemporaneo in ogni pezzo della nostra selezione.",
-    products_filters: ["Tutti", "Soggiorno", "Camera da Letto", "Ufficio"],
-    products_badge_sale: "Offerta",
-    products_badge_new: "Novità",
-    products_add: "Aggiungi al preventivo",
-    products_cta: "Vedi tutto il catalogo",
 
     // About
     about_label: "Chi siamo",
@@ -39,49 +31,8 @@ export const translations = {
       "Siamo un punto di riferimento per l'arredamento a Gravina in Puglia: selezioniamo prodotti di qualità e affianchiamo i nostri clienti in ogni fase della scelta.",
     about_body:
       "In Arredare Ambienti crediamo che ogni ambiente racconti qualcosa di chi lo abita. Per questo non ci limitiamo a vendere mobili: ascoltiamo le esigenze di ogni cliente, proponiamo soluzioni su misura e curiamo ogni dettaglio dalla scelta dei materiali alla composizione finale. Il nostro showroom a Gravina in Puglia è aperto a chi vuole toccare con mano la qualità prima di decidere.",
-    about_image_alt: "Venite a scoprire la nostra collezione!",
-    about_stats: [
-      // TODO: inserire il numero corretto di anni di attività (es. { value: "3+", label: "anni di attività" })
-      // { value: "??", label: "anni di attività" },
-      // TODO: inserire il numero approssimativo di clienti seguiti
-      // { value: "??", label: "clienti seguiti" },
-      // TODO: inserire il numero di brand/produttori trattati in showroom
-      // { value: "??", label: "brand selezionati" },
-      // TODO: inserire la metratura dello showroom se disponibile (es. "400 m²")
-      // { value: "??", label: "m² di showroom" },
-    ],
-
-    // Testimonials
-    test_label: "Testimonianze",
-    test_title: "Cosa dicono i nostri clienti",
-    test_subtitle:
-      "Migliaia di famiglie si sono affidate a noi. Queste sono alcune delle loro esperienze.",
-    test_reviews: [
-      {
-        id: 1,
-        name: "Marco Rossi",
-        city: "Milano",
-        stars: 5,
-        initials: "MR",
-        text: "Qualità eccezionale e assistenza impeccabile. Ho arredato l'intero appartamento con Arredare Ambienti e sono rimasto stupito dalla cura nei dettagli. Consiglio a chiunque voglia il meglio.",
-      },
-      {
-        id: 2,
-        name: "Giulia Bianchi",
-        city: "Roma",
-        stars: 5,
-        initials: "GB",
-        text: "Finalmente un negozio che unisce estetica e funzionalità. I prezzi sono assolutamente giusti per la qualità che ricevi. Il divano Modena è semplicemente perfetto.",
-      },
-      {
-        id: 3,
-        name: "Luca Ferrari",
-        city: "Torino",
-        stars: 5,
-        initials: "LF",
-        text: "Ho acquistato il tavolo terefa e non potrei essere più soddisfatto. I tempi di consegna e montaggio sono stati rispettati alla perfezione. Tornerò sicuramente.",
-      },
-    ],
+    about_image_alt:
+      "Interno arredato da Arredare Ambienti — showroom a Gravina in Puglia",
 
     // Contact
     contact_label: "Contattaci",
@@ -141,6 +92,7 @@ export const translations = {
     // Floating buttons
     wa_message: "Ciao! Vorrei avere maggiori informazioni.",
     wa_aria_label: "Contattaci su WhatsApp",
+    to_top_aria: "Torna in cima",
 
     // Cookie banner
     cookie_text:
@@ -188,31 +140,24 @@ export const translations = {
   en: {
     // Navbar
     nav_collections: "Collections",
+    nav_catalogue: "Catalogue",
     nav_about: "About Us",
     nav_contact: "Contact",
     nav_location: "Location",
     nav_quote: "Request a quote",
+    nav_lang_aria: "Change language",
+    nav_menu_open: "Open menu",
+    nav_menu_close: "Close menu",
 
     // Hero
     hero_logo_alt: "Arredare Ambienti",
-    hero_eyebrow: "- THE BEST IN HANDCRAFTED FURNITURE IN GRAVINA IN PUGLIA",
+    hero_eyebrow: "THE BEST IN HANDCRAFTED FURNITURE IN GRAVINA IN PUGLIA",
     hero_title: "Design, functionality and ",
     hero_title_em: "premium materials",
     hero_subtitle:
       "Transform your home into the place you've always dreamed of. Come and discover our collection!",
     hero_cta1: "Explore collections",
     hero_cta2: "Get a quote",
-
-    // Products
-    products_label: "Featured products",
-    products_title: "Our most beloved pieces",
-    products_subtitle:
-      "Artisan quality and contemporary design in every piece of our selection.",
-    products_filters: ["All", "Living Room", "Bedroom", "Office"],
-    products_badge_sale: "Sale",
-    products_badge_new: "New",
-    products_add: "Add to quote",
-    products_cta: "View full catalog",
 
     // About
     about_label: "About us",
@@ -224,48 +169,6 @@ export const translations = {
       "At Arredare Ambienti we believe every room tells something about the people who live in it. That's why we don't just sell furniture: we listen to each customer's needs, offer tailored solutions and take care of every detail — from material selection to the final composition. Our showroom in Gravina in Puglia is open to anyone who wants to see and touch the quality before deciding.",
     about_image_alt:
       "Interior by Arredare Ambienti — showroom in Gravina in Puglia",
-    about_stats: [
-      // TODO: insert the correct number of years in business (e.g. { value: "3+", label: "years in business" })
-      // { value: "??", label: "years in business" },
-      // TODO: insert approximate number of customers served
-      // { value: "??", label: "customers served" },
-      // TODO: insert number of brands / manufacturers carried in showroom
-      // { value: "??", label: "selected brands" },
-      // TODO: insert showroom floor area if available (e.g. "400 m²")
-      // { value: "??", label: "m² showroom" },
-    ],
-
-    // Testimonials
-    test_label: "Testimonials",
-    test_title: "What our customers say",
-    test_subtitle:
-      "Thousands of families have trusted us. Here are some of their experiences.",
-    test_reviews: [
-      {
-        id: 1,
-        name: "Marco Rossi",
-        city: "Milan",
-        stars: 5,
-        initials: "MR",
-        text: "Exceptional quality and impeccable service. I furnished my entire apartment with Arredare Ambienti and was amazed by the attention to detail. I recommend it to anyone who wants the best.",
-      },
-      {
-        id: 2,
-        name: "Giulia Bianchi",
-        city: "Rome",
-        stars: 5,
-        initials: "GB",
-        text: "Finally a store that combines aesthetics and functionality. The prices are absolutely fair for the quality you receive. The Modena sofa is simply perfect.",
-      },
-      {
-        id: 3,
-        name: "Luca Ferrari",
-        city: "Turin",
-        stars: 5,
-        initials: "LF",
-        text: "I bought the terefa table and could not be happier. Delivery and assembly were handled perfectly on time. I will definitely be back.",
-      },
-    ],
 
     // Contact
     contact_label: "Contact us",
@@ -315,7 +218,7 @@ export const translations = {
       },
       {
         id: "matera",
-        name: "Exhibition",
+        name: "Showroom",
         street: "Via Gravina 15",
         city: "Matera (MT)",
       },
@@ -325,6 +228,7 @@ export const translations = {
     // Floating buttons
     wa_message: "Hello! I would like more information.",
     wa_aria_label: "Contact us on WhatsApp",
+    to_top_aria: "Back to top",
 
     // Cookie banner
     cookie_text:

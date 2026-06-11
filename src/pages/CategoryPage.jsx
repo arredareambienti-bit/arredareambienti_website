@@ -125,6 +125,7 @@ export default function CategoryPage() {
                       src={product.images[0]}
                       alt={L(product.name)}
                       className={styles.productImg}
+                      loading="lazy"
                     />
                     <div className={styles.productHint}>
                       <svg

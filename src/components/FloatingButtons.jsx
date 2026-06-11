@@ -49,7 +49,7 @@ export default function FloatingButtons() {
       <button
         className={[styles.toTop, showTop && styles.toTopVisible].filter(Boolean).join(" ")}
         onClick={scrollToTop}
-        aria-label="Torna in cima"
+        aria-label={t("to_top_aria")}
       >
         <IconArrowUp />
       </button>

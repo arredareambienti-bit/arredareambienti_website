@@ -6,7 +6,6 @@ import styles from "./About.module.css";
 export default function About() {
   const [ref, inView] = useInView();
   const t = useT();
-  const stats = t("about_stats");
 
   return (
     <section
@@ -41,17 +40,6 @@ export default function About() {
             />
 
             <p className={styles.body}>{t("about_body")}</p>
-
-            {stats.length > 0 && (
-              <div className={styles.stats}>
-                {stats.map((s) => (
-                  <div key={s.label} className={styles.stat}>
-                    <span className={styles.statValue}>{s.value}</span>
-                    <span className={styles.statLabel}>{s.label}</span>
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </div>

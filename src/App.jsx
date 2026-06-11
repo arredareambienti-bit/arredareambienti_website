@@ -1,4 +1,10 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import { useEffect } from "react";
 import "./App.css";
 import About from "./components/About";
@@ -45,7 +51,6 @@ function HomePage() {
         <Hero />
         <Categories />
         <About />
-        {/* <Testimonials /> */}
         <Location />
         <Contact />
       </main>
@@ -64,6 +69,7 @@ function App() {
           <Route path="/categoria/:slug" element={<CategoryPage />} />
           <Route path="/cookie-policy" element={<CookiePolicyPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <CookieBanner />
         <FloatingButtons />

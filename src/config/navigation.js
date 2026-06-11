@@ -8,6 +8,7 @@
 export function getNavLinks(t) {
   return [
     { label: t("nav_collections"), href: "/#collezioni" },
+    { label: t("nav_catalogue"),   href: "/categoria/catalogo" },
     { label: t("nav_about"),       href: "/#chi-siamo"  },
     { label: t("nav_location"),    href: "/#dove-siamo" },
     { label: t("nav_contact"),     href: "/#contatti"   },

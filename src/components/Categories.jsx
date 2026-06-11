@@ -35,6 +35,7 @@ export default function Categories() {
               src={cat.heroImage}
               alt={cat.name[lang] ?? cat.name.it}
               className={styles.image}
+              loading="lazy"
             />
             <div className={styles.overlay} />
             <div className={styles.inner}>

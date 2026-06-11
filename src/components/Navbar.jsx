@@ -73,7 +73,7 @@ export default function Navbar() {
           <button
             className={styles.langToggle}
             onClick={() => setLang(lang === "it" ? "en" : "it")}
-            aria-label="Cambia lingua"
+            aria-label={t("nav_lang_aria")}
           >
             <span
               className={
@@ -98,7 +98,7 @@ export default function Navbar() {
             .filter(Boolean)
             .join(" ")}
           onClick={() => setMenuOpen((o) => !o)}
-          aria-label={menuOpen ? "Chiudi menu" : "Apri menu"}
+          aria-label={menuOpen ? t("nav_menu_close") : t("nav_menu_open")}
         >
           <span className={styles.line} />
           <span className={styles.line} />
