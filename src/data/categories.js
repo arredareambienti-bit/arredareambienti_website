@@ -10,7 +10,7 @@ export const CATEGORIES_DATA = [
       it: "Sedie artigianali realizzate con materiali naturali e lavorazioni curate nei dettagli. Comfort, estetica e solidità per ogni ambiente della casa.",
       en: "Handcrafted chairs made with natural materials and carefully detailed workmanship. Comfort, aesthetics and durability for every home environment.",
     },
-    heroImage: "/assets/chairs/chairs_001.jpg",
+    heroImage: "/assets/chairs/chairs_011.jpg",
     products: [
       {
         id: 1,
@@ -44,6 +44,57 @@ export const CATEGORIES_DATA = [
         },
         images: ["/assets/chairs/chairs_004.jpg"],
       },
+      {
+        id: 5,
+        name: {
+          it: "Poltroncina da pranzo crema con struttura bronzo",
+          en: "Cream dining chair with bronze metal frame",
+        },
+        images: ["/assets/chairs/chairs_005.jpg"],
+      },
+      {
+        id: 6,
+        name: {
+          it: "Sedie grigie bicolore con base a slitta cromata",
+          en: "Grey two-tone chairs with chrome sled base",
+        },
+        images: ["/assets/chairs/chairs_006.jpg"],
+      },
+      {
+        id: 7,
+        name: {
+          it: "Set tavolo rotondo in marmo con sedie imbottite e gambe dorate",
+          en: "Marble round table set with upholstered chairs and gold legs",
+        },
+        images: ["/assets/chairs/chairs_007.jpg"],
+      },
+      {
+        id: 8,
+        name: {
+          it: "Sgabello in velluto nero con gambe dorate e poggia piedi",
+          en: "Black velvet stool with gold legs and footrest",
+        },
+        images: ["/assets/chairs/chairs_008.jpg"],
+      },
+      {
+        id: 9,
+        name: {
+          it: "Sgabello regolabile in velluto tortora trapuntato con colonna oro",
+          en: "Adjustable quilted taupe velvet stool with gold column",
+        },
+        images: [
+          "/assets/chairs/chairs_010.jpg",
+          "/assets/chairs/chairs_009.jpg",
+        ],
+      },
+      {
+        id: 10,
+        name: {
+          it: "Sgabelli da bar in tessuto trapuntato con struttura in legno",
+          en: "Quilted fabric bar stools with wooden frame",
+        },
+        images: ["/assets/chairs/chairs_011.jpg"],
+      },
     ],
   },
 
@@ -58,7 +109,7 @@ export const CATEGORIES_DATA = [
       it: "Contenitori, librerie, madie e credenze pensate per organizzare e valorizzare ogni spazio. Ogni pezzo unisce funzionalità e bellezza con materiali naturali selezionati a mano.",
       en: "Storage pieces, bookcases, sideboards and cabinets designed to organise and enhance every space. Each piece combines functionality and beauty with hand-selected natural materials.",
     },
-    heroImage: "/assets/furniture/furniture_006.jpg",
+    heroImage: "/assets/furniture/furniture_003.jpg",
     products: [
       {
         id: 1,
@@ -73,8 +124,8 @@ export const CATEGORIES_DATA = [
       {
         id: 3,
         name: {
-          it: "Lampada alta metallo nero-oro",
-          en: "Tall Black and Gold Metal Lamp",
+          it: "MADIA Polvere verde Salvia",
+          en: "MADIA Sage Green Powder Cabinet",
         },
         images: [
           "/assets/furniture/furniture_003.jpg",
@@ -84,31 +135,32 @@ export const CATEGORIES_DATA = [
       },
       {
         id: 4,
-        name: {
-          it: "MADIA Polvere verde Salvia",
-          en: "MADIA Sage Green Powder Cabinet",
-        },
-        images: [
-          "/assets/furniture/furniture_006.jpg",
-          "/assets/furniture/furniture_007.jpg",
-          "/assets/furniture/furniture_008.jpg",
-        ],
+        name: { it: "Lampada metallo-ceramica", en: "Metal and Ceramic Lamp" },
+        images: ["/assets/furniture/furniture_006.jpg"],
       },
       {
         id: 5,
         name: {
-          it: "Pouff semipelle ricamato",
-          en: "Embroidered Semi-Leather Pouf",
+          it: "Credenza in marmo grafite con specchi rotondi a parete",
+          en: "Graphite marble sideboard with round wall mirrors",
         },
-        images: [
-          "/assets/furniture/furniture_009.jpg",
-          "/assets/furniture/furniture_010.jpg",
-        ],
+        images: ["/assets/furniture/furniture_007.jpg"],
       },
       {
         id: 6,
-        name: { it: "Lampada metallo-ceramica", en: "Metal and Ceramic Lamp" },
-        images: ["/assets/furniture/furniture_011.jpg"],
+        name: {
+          it: "Credenza bianca design geometrico con gambe in oro",
+          en: "White geometric design sideboard with gold legs",
+        },
+        images: ["/assets/furniture/furniture_008.jpg"],
+      },
+      {
+        id: 7,
+        name: {
+          it: "Madia a tre ante in greige con maniglie e dettagli oro",
+          en: "Three-door greige cabinet with gold handles and details",
+        },
+        images: ["/assets/furniture/furniture_009.jpg"],
       },
     ],
   },
@@ -122,9 +174,9 @@ export const CATEGORIES_DATA = [
     },
     description: {
       it: "Tavoli progettati per unire funzionalità e design. Ogni pezzo è unico, realizzato per durare nel tempo.",
-      en: "Theese tables designed to combine functionality and design. Each piece is unique and built to last.",
+      en: "These tables designed to combine functionality and design. Each piece is unique and built to last.",
     },
-    heroImage: "/assets/tables/tables_001.jpg",
+    heroImage: "/assets/tables/tables_008.jpg",
     products: [
       {
         id: 1,
@@ -141,29 +193,52 @@ export const CATEGORIES_DATA = [
       },
       {
         id: 3,
-        name: { it: "Tavolino porta lampada", en: "Lamp Side Table" },
-        images: ["/assets/tables/tables_003.jpg"],
+        name: { it: "Tavolo gress porcellanato", en: "Porcelain Gres Table" },
+        images: [
+          "/assets/tables/tables_003.jpg",
+          "/assets/tables/tables_004.jpg",
+          "/assets/tables/tables_005.jpg",
+        ],
       },
       {
         id: 4,
         name: {
-          it: "Tavolino da notte intelligente",
-          en: "Smart Bedside Table",
+          it: "Tavolo da pranzo in ceramica bianca con base ad anello",
+          en: "White ceramic dining table with ring pedestal base",
         },
-        images: [
-          "/assets/tables/tables_004.jpg",
-          "/assets/tables/tables_005.jpg",
-          "/assets/tables/tables_006.jpg",
-        ],
+        images: ["/assets/tables/tables_006.jpg"],
       },
       {
         id: 5,
-        name: { it: "Tavolo gress porcellanato", en: "Porcelain Gres Table" },
-        images: [
-          "/assets/tables/tables_007.jpg",
-          "/assets/tables/tables_008.jpg",
-          "/assets/tables/tables_009.jpg",
-        ],
+        name: {
+          it: "Tavolo allungabile in gres effetto marmo con base X in metallo nero",
+          en: "Extendable marble-effect gres table with black metal X base",
+        },
+        images: ["/assets/tables/tables_007.jpg"],
+      },
+      {
+        id: 6,
+        name: {
+          it: "Tavolo da pranzo in legno naturale con gambe a V in metallo nero",
+          en: "Natural wood dining table with black V-shaped metal legs",
+        },
+        images: ["/assets/tables/tables_008.jpg"],
+      },
+      {
+        id: 7,
+        name: {
+          it: "Tavolo in gres travertino con base a cilindro scanalato in legno",
+          en: "Travertine gres dining table with fluted wood cylinder base",
+        },
+        images: ["/assets/tables/tables_009.jpg"],
+      },
+      {
+        id: 8,
+        name: {
+          it: "Tavolo in ceramica bianca con base geometrica in metallo scuro",
+          en: "White ceramic table with geometric dark metal base",
+        },
+        images: ["/assets/tables/tables_010.jpg"],
       },
     ],
   },
@@ -179,17 +254,17 @@ export const CATEGORIES_DATA = [
       it: "Divani artigianali pensati per il massimo comfort e stile. Linee moderne o classiche per ogni salotto.",
       en: "Handcrafted sofas designed for maximum comfort and style. Modern or classic lines for any living room.",
     },
-    heroImage: "/assets/sofa_armchairs/sofa_004.jpg",
+    heroImage: "/assets/sofa_armchairs/sofa_015.jpg",
     products: [
       {
         id: 1,
         name: { it: "Divano 3 posti moderno", en: "Modern 3-Seater Sofa" },
-        images: ["/assets/sofa_armchairs/sofa_013.jpg"],
+        images: ["/assets/sofa_armchairs/sofa_005.jpg"],
       },
       {
         id: 2,
         name: { it: "Divano angolare grande", en: "Large Corner Sofa" },
-        images: ["/assets/sofa_armchairs/sofa_014.jpg"],
+        images: ["/assets/sofa_armchairs/sofa_006.jpg"],
       },
       {
         id: 3,
@@ -197,54 +272,81 @@ export const CATEGORIES_DATA = [
           it: "Poltrona reclinabile in tessuto",
           en: "Fabric Reclining Armchair",
         },
-        images: ["/assets/sofa_armchairs/sofa_015.jpg"],
+        images: ["/assets/sofa_armchairs/sofa_007.jpg"],
       },
       {
         id: 4,
         name: { it: "Divano minimal elegante", en: "Elegant Minimal Sofa" },
-        images: ["/assets/sofa_armchairs/sofa_016.jpg"],
+        images: ["/assets/sofa_armchairs/sofa_008.jpg"],
       },
       {
         id: 5,
-        name: { it: "Divano 3P col. tortora", en: "3-Seater Taupe Sofa" },
-        images: [
-          "/assets/sofa_armchairs/sofa_004.jpg",
-          "/assets/sofa_armchairs/sofa_005.jpg",
-          "/assets/sofa_armchairs/sofa_006.jpg",
-        ],
-      },
-      {
-        id: 6,
-        name: { it: "Divano 2P letto Billy", en: "Billy 2-Seater Sofa Bed" },
-        images: [
-          "/assets/sofa_armchairs/sofa_007.jpg",
-          "/assets/sofa_armchairs/sofa_008.jpg",
-          "/assets/sofa_armchairs/sofa_002.jpg",
-        ],
-      },
-      {
-        id: 7,
-        name: {
-          it: "Divano lounge DX, tessuto Petra",
-          en: "Petra Fabric Lounge Right Sofa",
-        },
-        images: [
-          "/assets/sofa_armchairs/sofa_009.jpg",
-          "/assets/sofa_armchairs/sofa_010.jpg",
-        ],
-      },
-      {
-        id: 8,
         name: {
           it: "Divano 3P meccanica elettronica, tessuto Petra",
           en: "Petra 3-Seater Electronic Sofa",
         },
         images: [
-          "/assets/sofa_armchairs/sofa_011.jpg",
-          "/assets/sofa_armchairs/sofa_012.jpg",
-          "/assets/sofa_armchairs/sofa_001.jpg",
           "/assets/sofa_armchairs/sofa_003.jpg",
+          "/assets/sofa_armchairs/sofa_004.jpg",
+          "/assets/sofa_armchairs/sofa_001.jpg",
+          "/assets/sofa_armchairs/sofa_002.jpg",
         ],
+      },
+      {
+        id: 6,
+        name: {
+          it: "Divano angolare in tessuto tortora con penisola e gambe in metallo",
+          en: "Taupe fabric corner sofa with chaise longue and metal legs",
+        },
+        images: ["/assets/sofa_armchairs/sofa_009.jpg"],
+      },
+      {
+        id: 7,
+        name: {
+          it: "Divano angolare extra-large in tessuto avorio con cuscini neutri",
+          en: "Extra-large ivory fabric corner sofa with neutral cushions",
+        },
+        images: ["/assets/sofa_armchairs/sofa_010.jpg"],
+      },
+      {
+        id: 8,
+        name: {
+          it: "Divano angolare in tessuto cammello con poggiatesta reclinabili",
+          en: "Camel fabric corner sofa with reclining headrests",
+        },
+        images: ["/assets/sofa_armchairs/sofa_011.jpg"],
+      },
+      {
+        id: 9,
+        name: {
+          it: "Divano 3 posti in bouclé patchwork multicolor con pouf",
+          en: "3-seater multicolour bouclé patchwork sofa with ottoman",
+        },
+        images: ["/assets/sofa_armchairs/sofa_012.jpg"],
+      },
+      {
+        id: 10,
+        name: {
+          it: "Divano 3 posti extra-long in tessuto grigio con gambe in vetro",
+          en: "Extra-long grey fabric sofa with transparent glass legs",
+        },
+        images: ["/assets/sofa_armchairs/sofa_013.jpg"],
+      },
+      {
+        id: 11,
+        name: {
+          it: "Composizione divani modulari in tessuto sabbia con libreria a parete",
+          en: "Modular sand fabric sofa composition with wall-mounted bookcase",
+        },
+        images: ["/assets/sofa_armchairs/sofa_014.jpg"],
+      },
+      {
+        id: 12,
+        name: {
+          it: "Divano 3 posti in tessuto verde salvia con gambe in legno chiaro",
+          en: "3-seater sage green fabric sofa with light wood legs",
+        },
+        images: ["/assets/sofa_armchairs/sofa_015.jpg"],
       },
     ],
   },
@@ -400,6 +502,46 @@ export const CATEGORIES_DATA = [
         },
         images: ["/assets/bedroom/bedroom_004.jpg"],
       },
+      {
+        id: 5,
+        name: {
+          it: "Camera da letto in noce scuro con letto a pedana contenitore e applique dorate",
+          en: "Dark walnut bedroom with storage platform bed and gold wall lights",
+        },
+        images: ["/assets/bedroom/bedroom_005.jpg"],
+      },
+      {
+        id: 6,
+        name: {
+          it: "Camera da letto antracite con testiera a doghe in legno e cassettone design a gradini",
+          en: "Anthracite bedroom with slatted wood headboard and stepped design dresser",
+        },
+        images: ["/assets/bedroom/bedroom_006.jpg"],
+      },
+      {
+        id: 7,
+        name: {
+          it: "Camera da letto completa in legno naturale con doghe e armadio con specchio",
+          en: "Complete natural wood bedroom with slatted panels and mirror wardrobe",
+        },
+        images: ["/assets/bedroom/bedroom_007.jpg"],
+      },
+      {
+        id: 8,
+        name: {
+          it: "Camera da letto bianca elegante con armadio a specchio beige e parquet scuro",
+          en: "Elegant white bedroom with beige mirror wardrobe and dark parquet",
+        },
+        images: ["/assets/bedroom/bedroom_008.jpg"],
+      },
+      {
+        id: 9,
+        name: {
+          it: "Camera da letto romantica cipria e bianco con dettagli oro e pareti marmo",
+          en: "Romantic powder pink and white bedroom with gold details and marble walls",
+        },
+        images: ["/assets/bedroom/bedroom_009.jpg"],
+      },
     ],
   },
 
@@ -470,6 +612,22 @@ export const CATEGORIES_DATA = [
           en: "Modern Designer Living Room",
         },
         images: ["/assets/living_room/living_008.jpg"],
+      },
+      {
+        id: 9,
+        name: {
+          it: "Soggiorno rustico moderno con parete attrezzata in legno e bianco",
+          en: "Modern rustic living room with white and wood TV wall unit",
+        },
+        images: ["/assets/living_room/living_009.jpg"],
+      },
+      {
+        id: 10,
+        name: {
+          it: "Soggiorno con mobile TV modulare sospeso bordò e grafite",
+          en: "Living room with floating modular TV unit in burgundy and graphite",
+        },
+        images: ["/assets/living_room/living_010.jpg"],
       },
     ],
   },
@@ -596,11 +754,91 @@ export const CATEGORIES_DATA = [
       },
     ],
   },
-  /* ------------------------------
-     CATALOGO
-  ------------------------------ */
   {
     id: 10,
+    slug: "esterni",
+    name: {
+      it: "Arredamento da esterni",
+      en: "Outdoor Furniture",
+    },
+    description: {
+      it: "Arredamento da esterno per terrazzi, giardini e spazi all'aperto. Materiali resistenti alle intemperie, design curato per vivere il relax anche fuori casa.",
+      en: "Outdoor furniture for terraces, gardens and open-air spaces. Weather-resistant materials and refined design to enjoy relaxation outside.",
+    },
+    heroImage: "/assets/exteriors/exterior_005.jpg",
+    products: [
+      {
+        id: 1,
+        name: {
+          it: "Casetta da giardino in legno con pareti vetrate e arredamento lounge",
+          en: "Glass-walled wooden garden room with lounge furniture",
+        },
+        images: ["/assets/exteriors/exterior_001.jpg"],
+      },
+      {
+        id: 2,
+        name: {
+          it: "Set lounge outdoor in tessuto grigio su deck in legno con braciere in Corten",
+          en: "Outdoor grey fabric lounge set on wood deck with corten fire bowl",
+        },
+        images: ["/assets/exteriors/exterior_002.jpg"],
+      },
+      {
+        id: 3,
+        name: {
+          it: "Set da giardino in rattan sintetico naturale con vista mare e piscina",
+          en: "Natural synthetic rattan garden set with sea view and pool",
+        },
+        images: ["/assets/exteriors/exterior_003.jpg"],
+      },
+      {
+        id: 4,
+        name: {
+          it: "Set lounge da giardino in rattan grigio con divano e tavolino su deck in legno",
+          en: "Grey rattan garden lounge set with sofa and coffee table on wooden deck",
+        },
+        images: ["/assets/exteriors/exterior_004.jpg"],
+      },
+      {
+        id: 5,
+        name: {
+          it: "Set outdoor in rattan naturale con tavolino in legno su terrazza moderna",
+          en: "Natural rattan outdoor set with wooden coffee table on modern terrace",
+        },
+        images: ["/assets/exteriors/exterior_005.jpg"],
+      },
+      {
+        id: 6,
+        name: {
+          it: "Set lounge da giardino in rattan grigio chiaro con cuscini antracite e vista piscina",
+          en: "Light grey rattan garden lounge set with anthracite cushions and pool view",
+        },
+        images: ["/assets/exteriors/exterior_006.jpg"],
+      },
+      {
+        id: 7,
+        name: {
+          it: "Gazebo da giardino con telo crema, arredamento in rattan e vista lago",
+          en: "Garden gazebo with cream canopy, rattan furniture and lake view",
+        },
+        images: ["/assets/exteriors/exterior_007.jpg"],
+      },
+      {
+        id: 8,
+        name: {
+          it: "Gazebo in legno naturale con telo bianco e set lounge in rattan e vimini",
+          en: "Natural wood gazebo with white canopy and rattan wicker lounge set",
+        },
+        images: ["/assets/exteriors/exterior_008.jpg"],
+      },
+    ],
+  },
+
+  /* ------------------------------
+     CATALOGUE
+  ------------------------------ */
+  {
+    id: 11,
     slug: "catalogo",
     name: {
       it: "Catalogo",
