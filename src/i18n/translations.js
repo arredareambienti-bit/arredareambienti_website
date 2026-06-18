@@ -135,6 +135,17 @@ export const translations = {
     modal_prev: "Immagine precedente",
     modal_next: "Immagine successiva",
     modal_photo: "foto",
+
+    // Page titles
+    page_title_home: "Arredare Ambienti — Arredamento a Gravina in Puglia",
+
+    // Meta descriptions
+    meta_desc_home: "Arredare Ambienti — showroom di arredamento artigianale a Gravina in Puglia: cucine, divani, camere, soggiorni, bagni e soluzioni da esterno su misura.",
+
+    // Common UI
+    back_to_home: "← Torna alla home",
+    not_found_title: "Pagina non trovata",
+    not_found_subtitle: "La pagina che cerchi non esiste o è stata spostata.",
   },
 
   en: {
@@ -271,5 +282,16 @@ export const translations = {
     modal_prev: "Previous image",
     modal_next: "Next image",
     modal_photo: "photo",
+
+    // Page titles
+    page_title_home: "Arredare Ambienti — Furniture in Gravina in Puglia",
+
+    // Meta descriptions
+    meta_desc_home: "Arredare Ambienti — handcrafted furniture showroom in Gravina in Puglia: kitchens, sofas, bedrooms, living rooms, bathrooms and bespoke outdoor solutions.",
+
+    // Common UI
+    back_to_home: "← Back to home",
+    not_found_title: "Page not found",
+    not_found_subtitle: "The page you are looking for does not exist or has been moved.",
   },
 };

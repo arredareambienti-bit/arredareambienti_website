@@ -53,7 +53,7 @@ export default function Footer() {
             <p className={styles.tagline}>{t("footer_tagline")}</p>
           </div>
 
-          {/* ── Orari ── */}
+          {/* ── Hours ── */}
           <div className={styles.col}>
             <h4 className={styles.colTitle}>{t("footer_hours_title")}</h4>
             <ul className={styles.hoursList}>
@@ -66,7 +66,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ── Navigazione ── */}
+          {/* ── Navigation ── */}
           <div className={styles.col}>
             <h4 className={styles.colTitle}>{t("footer_nav_title")}</h4>
             <ul className={styles.colList}>
@@ -80,10 +80,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ── Social (spazio lasciato vuoto) ── */}
+          {/* ── Placeholder column ── */}
           <div className={styles.col}></div>
 
-          {/* ── Qualità (ora contiene i social) ── */}
+          {/* ── Social links ── */}
           <div className={styles.col}>
             <h4 className={styles.colTitle}>{t("footer_social_title")}</h4>
 

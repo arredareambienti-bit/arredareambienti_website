@@ -2,20 +2,149 @@
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/assets/logo.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="/assets/logo.jpeg" />
+    <link rel="apple-touch-icon" href="/assets/logo.jpeg" />
+    <meta name="theme-color" content="#EDE4D0" />
+
+    <!-- Performance: preload hero image -->
+    <link rel="preload" as="image" href="/assets/logo.jpeg" />
+
+    <!-- SEO -->
+    <title>Arredare Ambienti</title>
     <meta
       name="description"
-      content="Arredare Ambienti — showroom di arredamento artigianale a Gravina in Puglia: cucine, divani, camere, soggiorni e soluzioni su misura."
+      content="Arredare Ambienti — showroom di arredamento artigianale a Gravina in Puglia: cucine, divani, camere, soggiorni, bagni e soluzioni da esterno su misura."
     />
+    <link rel="canonical" href="https://arredareambienti.it/" />
+
+    <!-- Hreflang (same URL serves both IT and EN) -->
+    <link rel="alternate" hreflang="it" href="https://arredareambienti.it/" />
+    <link rel="alternate" hreflang="en" href="https://arredareambienti.it/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://arredareambienti.it/"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Arredare Ambienti" />
     <meta property="og:title" content="Arredare Ambienti" />
     <meta
       property="og:description"
-      content="Showroom di arredamento artigianale a Gravina in Puglia."
+      content="Showroom di arredamento artigianale a Gravina in Puglia. Cucine, divani, camere, soggiorni e soluzioni su misura."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/logo.jpeg" />
-    <title>Arredare Ambienti</title>
+    <meta property="og:url" content="https://arredareambienti.it/" />
+    <meta
+      property="og:image"
+      content="https://arredareambienti.it/assets/logo.jpeg"
+    />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:locale:alternate" content="en_GB" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Arredare Ambienti" />
+    <meta
+      name="twitter:description"
+      content="Showroom di arredamento artigianale a Gravina in Puglia."
+    />
+    <meta
+      name="twitter:image"
+      content="https://arredareambienti.it/assets/logo.jpeg"
+    />
+
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FurnitureStore",
+        "name": "Arredare Ambienti",
+        "legalName": "Arredare Ambienti S.r.l.",
+        "url": "https://arredareambienti.it",
+        "logo": "https://arredareambienti.it/assets/logo.jpeg",
+        "image": "https://arredareambienti.it/assets/logo.jpeg",
+        "description": "Showroom di arredamento artigianale a Gravina in Puglia: cucine, divani, camere, soggiorni, bagni e soluzioni da esterno su misura.",
+        "telephone": "+390804727901",
+        "email": "arredareambienti@gmail.com",
+        "vatID": "IT01256620772",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via Federico Meninni 275",
+          "addressLocality": "Gravina in Puglia",
+          "addressRegion": "BA",
+          "postalCode": "70024",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.8209047,
+          "longitude": 16.4268126
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "13:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "16:30",
+            "closes": "20:30"
+          }
+        ],
+        "location": [
+          {
+            "@type": "Place",
+            "name": "Showroom Gravina in Puglia",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Via Federico Meninni 275",
+              "addressLocality": "Gravina in Puglia",
+              "addressRegion": "BA",
+              "postalCode": "70024",
+              "addressCountry": "IT"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "Esposizione Matera",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Via Gravina 15",
+              "addressLocality": "Matera",
+              "addressRegion": "MT",
+              "postalCode": "75100",
+              "addressCountry": "IT"
+            }
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/arredare_ambienti",
+          "https://www.facebook.com/share/1CtRqcSno2/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

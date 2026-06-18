@@ -1,16 +1,33 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import ScrollToTop from "../components/ScrollToTop";
+import { useLang } from "../context/LangContext";
+import { useT } from "../i18n/useT";
 import styles from "./CookiePolicyPage.module.css";
 
 export default function CookiePolicyPage() {
+  const t = useT();
+  const { lang } = useLang();
+
+  useEffect(() => {
+    const url = "https://arredareambienti.it/cookie-policy";
+    document.title = "Cookie Policy | Arredare Ambienti";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Informativa cookie di Arredare Ambienti: tipologie di cookie utilizzati, terze parti e come gestirli.");
+    document.querySelector('link[rel="canonical"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="it"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="en"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="x-default"]')?.setAttribute("href", url);
+  }, []);
+
   return (
     <>
+      <a href="#main-content" className="skip-link">Salta al contenuto</a>
       <Navbar />
       <ScrollToTop />
 
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         <div className={styles.breadcrumbBar}>
           <div className="container">
             <nav className={styles.breadcrumb}>
@@ -25,6 +42,11 @@ export default function CookiePolicyPage() {
           <article className={styles.article}>
             <h1 className={styles.title}>Cookie Policy</h1>
             <p className={styles.updated}>Ultimo aggiornamento: maggio 2025</p>
+            {lang === "en" && (
+              <p className={styles.langNotice}>
+                This page is currently available in Italian only.
+              </p>
+            )}
 
             <section className={styles.section}>
               <h2>1. Cosa sono i cookie</h2>
@@ -41,7 +63,7 @@ export default function CookiePolicyPage() {
               <p>
                 <strong>Arredare Ambienti S.r.l.</strong><br />
                 Via Federico Meninni 275, 70024 Gravina in Puglia (BA)<br />
-                Email: <a href="mailto:bentleycommerciale@gmail.com" className={styles.link}>bentleycommerciale@gmail.com</a>
+                Email: <a href="mailto:arredareambienti@gmail.com" className={styles.link}>arredareambienti@gmail.com</a>
               </p>
             </section>
 
@@ -207,7 +229,7 @@ export default function CookiePolicyPage() {
             </section>
 
             <div className={styles.backWrap}>
-              <Link to="/" className={styles.back}>← Torna alla home</Link>
+              <Link to="/" className={styles.back}>{t("back_to_home")}</Link>
             </div>
           </article>
         </div>

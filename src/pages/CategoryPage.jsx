@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -66,16 +66,28 @@ export default function CategoryPage() {
   const [openProduct, setOpenProduct] = useState(null);
   const t = useT();
 
+  useEffect(() => {
+    if (!category) return;
+    const url = `https://arredareambienti.it/categoria/${category.slug}`;
+    document.title = `${category.name[lang] ?? category.name.it} | Arredare Ambienti`;
+    document.querySelector('meta[name="description"]')?.setAttribute("content", category.description[lang] ?? category.description.it);
+    document.querySelector('link[rel="canonical"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="it"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="en"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="x-default"]')?.setAttribute("href", url);
+  }, [lang, category]);
+
   if (!category) return <Navigate to="/" replace />;
 
   const L = (v) => v[lang] ?? v.it;
 
   return (
     <>
+      <a href="#main-content" className="skip-link">Salta al contenuto</a>
       <Navbar />
       <ScrollToTop />
 
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         {/* ── Breadcrumb ─────────────────────────────── */}
         <div className={styles.breadcrumbBar}>
           <div className="container">

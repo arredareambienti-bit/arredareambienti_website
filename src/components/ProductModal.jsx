@@ -143,7 +143,7 @@ export default function ProductModal({ product, onClose }) {
 
 ProductModal.propTypes = {
   product: PropTypes.shape({
-    name: PropTypes.string.isRequired,
+    name: PropTypes.objectOf(PropTypes.string).isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
   onClose: PropTypes.func.isRequired,

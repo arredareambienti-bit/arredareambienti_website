@@ -196,7 +196,7 @@ export default function Contact() {
           <button
             className={styles.toastClose}
             onClick={() => setToast(null)}
-            aria-label="Chiudi"
+            aria-label={t("modal_close")}
           >
             ✕
           </button>

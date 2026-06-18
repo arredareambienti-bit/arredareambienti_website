@@ -10,7 +10,7 @@ export default function Categories() {
   const { lang } = useLang();
   const t = useT();
 
-  // Filtriamo i dati per mostrare nella griglia solo le categorie reali ed escludere le pagine del catalogo
+  // Filter data to show only real categories in the grid and exclude catalog pages
   const realCategories = CATEGORIES_DATA.filter(
     (cat) => cat.slug && cat.heroImage,
   );
@@ -26,7 +26,7 @@ export default function Categories() {
       <div className={styles.grid}>
         {realCategories.map((cat, i) => (
           <Link
-            key={cat.id + "-" + cat.slug} // Chiave univoca combinata visto che gli ID sono identici
+            key={cat.id + "-" + cat.slug} // Combined unique key since IDs are identical
             to={`/categoria/${cat.slug}`}
             className={styles.card}
             style={{ transitionDelay: `${i * 0.08}s` }}

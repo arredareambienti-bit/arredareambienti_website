@@ -1,6 +1,5 @@
 import {
   BrowserRouter,
-  Navigate,
   Route,
   Routes,
   useLocation,
@@ -8,6 +7,8 @@ import {
 import { useEffect } from "react";
 import "./App.css";
 import About from "./components/About";
+import { LangProvider, useLang } from "./context/LangContext";
+import { useT } from "./i18n/useT";
 import Categories from "./components/Categories";
 import Contact from "./components/Contact";
 import CookieBanner from "./components/CookieBanner";
@@ -16,9 +17,9 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Location from "./components/Location";
 import Navbar from "./components/Navbar";
-import { LangProvider } from "./context/LangContext";
 import CategoryPage from "./pages/CategoryPage";
 import CookiePolicyPage from "./pages/CookiePolicyPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 
 function ScrollToHash() {
@@ -32,8 +33,8 @@ function ScrollToHash() {
       el.scrollIntoView({ behavior: "smooth" });
       return;
     }
-    // Elemento non ancora nel DOM (navigazione da un'altra rotta):
-    // aspetta il render e riprova
+    // Element not yet in the DOM (navigation from another route):
+    // wait for render and retry
     const timer = setTimeout(() => {
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }, 80);
@@ -44,10 +45,23 @@ function ScrollToHash() {
 }
 
 function HomePage() {
+  const t = useT();
+  const { lang } = useLang();
+  useEffect(() => {
+    const url = "https://arredareambienti.it/";
+    document.title = t("page_title_home");
+    document.querySelector('meta[name="description"]')?.setAttribute("content", t("meta_desc_home"));
+    document.querySelector('link[rel="canonical"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="it"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="en"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="x-default"]')?.setAttribute("href", url);
+  }, [lang, t]);
+
   return (
     <>
+      <a href="#main-content" className="skip-link">Salta al contenuto</a>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <Categories />
         <About />
@@ -69,7 +83,7 @@ function App() {
           <Route path="/categoria/:slug" element={<CategoryPage />} />
           <Route path="/cookie-policy" element={<CookiePolicyPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <CookieBanner />
         <FloatingButtons />

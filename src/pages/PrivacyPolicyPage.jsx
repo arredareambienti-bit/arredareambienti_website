@@ -1,16 +1,33 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
+import { useLang } from "../context/LangContext";
+import { useT } from "../i18n/useT";
 import styles from "./CookiePolicyPage.module.css";
 
 export default function PrivacyPolicyPage() {
+  const t = useT();
+  const { lang } = useLang();
+
+  useEffect(() => {
+    const url = "https://arredareambienti.it/privacy-policy";
+    document.title = "Privacy Policy | Arredare Ambienti";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Informativa privacy di Arredare Ambienti: dati raccolti, finalità del trattamento e diritti dell'interessato.");
+    document.querySelector('link[rel="canonical"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="it"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="en"]')?.setAttribute("href", url);
+    document.querySelector('link[rel="alternate"][hreflang="x-default"]')?.setAttribute("href", url);
+  }, []);
+
   return (
     <>
+      <a href="#main-content" className="skip-link">Salta al contenuto</a>
       <Navbar />
       <ScrollToTop />
 
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         <div className={styles.breadcrumbBar}>
           <div className="container">
             <nav className={styles.breadcrumb}>
@@ -25,6 +42,11 @@ export default function PrivacyPolicyPage() {
           <article className={styles.article}>
             <h1 className={styles.title}>Privacy Policy</h1>
             <p className={styles.updated}>Ultimo aggiornamento: maggio 2026</p>
+            {lang === "en" && (
+              <p className={styles.langNotice}>
+                This page is currently available in Italian only.
+              </p>
+            )}
 
             <section className={styles.section}>
               <h2>1. Titolare del trattamento</h2>
@@ -37,8 +59,8 @@ export default function PrivacyPolicyPage() {
                 Via Federico Meninni 275, 70024 Gravina in Puglia (BA)<br />
                 P.IVA 01256620772<br />
                 Email:{" "}
-                <a href="mailto:bentleycommerciale@gmail.com" className={styles.link}>
-                  bentleycommerciale@gmail.com
+                <a href="mailto:arredareambienti@gmail.com" className={styles.link}>
+                  arredareambienti@gmail.com
                 </a>
               </p>
             </section>
@@ -184,7 +206,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <div className={styles.backWrap}>
-              <Link to="/" className={styles.back}>← Torna alla home</Link>
+              <Link to="/" className={styles.back}>{t("back_to_home")}</Link>
             </div>
           </article>
         </div>
