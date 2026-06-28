@@ -14,16 +14,29 @@ export default function PrivacyPolicyPage() {
   useEffect(() => {
     const url = "https://arredareambienti.it/privacy-policy";
     document.title = "Privacy Policy | Arredare Ambienti";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "Informativa privacy di Arredare Ambienti: dati raccolti, finalità del trattamento e diritti dell'interessato.");
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute(
+        "content",
+        "Informativa privacy di Arredare Ambienti: dati raccolti, finalità del trattamento e diritti dell'interessato.",
+      );
     document.querySelector('link[rel="canonical"]')?.setAttribute("href", url);
-    document.querySelector('link[rel="alternate"][hreflang="it"]')?.setAttribute("href", url);
-    document.querySelector('link[rel="alternate"][hreflang="en"]')?.setAttribute("href", url);
-    document.querySelector('link[rel="alternate"][hreflang="x-default"]')?.setAttribute("href", url);
+    document
+      .querySelector('link[rel="alternate"][hreflang="it"]')
+      ?.setAttribute("href", url);
+    document
+      .querySelector('link[rel="alternate"][hreflang="en"]')
+      ?.setAttribute("href", url);
+    document
+      .querySelector('link[rel="alternate"][hreflang="x-default"]')
+      ?.setAttribute("href", url);
   }, []);
 
   return (
     <>
-      <a href="#main-content" className="skip-link">Salta al contenuto</a>
+      <a href="#main-content" className="skip-link">
+        Salta al contenuto
+      </a>
       <Navbar />
       <ScrollToTop />
 
@@ -31,7 +44,9 @@ export default function PrivacyPolicyPage() {
         <div className={styles.breadcrumbBar}>
           <div className="container">
             <nav className={styles.breadcrumb}>
-              <Link to="/" className={styles.breadcrumbLink}>Home</Link>
+              <Link to="/" className={styles.breadcrumbLink}>
+                Home
+              </Link>
               <span className={styles.breadcrumbSep}>›</span>
               <span className={styles.breadcrumbCurrent}>Privacy Policy</span>
             </nav>
@@ -55,12 +70,18 @@ export default function PrivacyPolicyPage() {
                 il presente sito è:
               </p>
               <p>
-                <strong>Arredare Ambienti S.r.l.</strong><br />
-                Via Federico Meninni 275, 70024 Gravina in Puglia (BA)<br />
-                P.IVA 01256620772<br />
+                <strong>Arredare Ambienti S.r.l.</strong>
+                <br />
+                Via Federico Meninni 275, 70024 Gravina in Puglia (BA)
+                <br />
+                P.IVA 01256620772
+                <br />
                 Email:{" "}
-                <a href="mailto:arredareambienti@gmail.com" className={styles.link}>
-                  arredareambienti@gmail.com
+                <a
+                  href="mailto:info@arredareambienti.it"
+                  className={styles.link}
+                >
+                  info@arredareambienti.it
                 </a>
               </p>
             </section>
@@ -79,10 +100,12 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p>
                 Non vengono raccolti dati di profilazione né effettuata alcuna
-                attività di tracciamento pubblicitario. Per i cookie e i
-                servizi di terze parti utilizzati durante la navigazione si
-                rimanda alla{" "}
-                <Link to="/cookie-policy" className={styles.link}>Cookie Policy</Link>.
+                attività di tracciamento pubblicitario. Per i cookie e i servizi
+                di terze parti utilizzati durante la navigazione si rimanda alla{" "}
+                <Link to="/cookie-policy" className={styles.link}>
+                  Cookie Policy
+                </Link>
+                .
               </p>
             </section>
 
@@ -105,9 +128,9 @@ export default function PrivacyPolicyPage() {
               <h2>4. Modalità del trattamento e servizio EmailJS</h2>
               <p>
                 I messaggi inviati dal form vengono recapitati al Titolare
-                tramite il servizio <strong>EmailJS</strong> (EmailJS Ltd.),
-                che funge da responsabile tecnico del trasporto del messaggio
-                senza conservare i dati in modo persistente.
+                tramite il servizio <strong>EmailJS</strong> (EmailJS Ltd.), che
+                funge da responsabile tecnico del trasporto del messaggio senza
+                conservare i dati in modo persistente.
               </p>
               <p>
                 I dati sono trattati con strumenti elettronici e con misure
@@ -120,7 +143,8 @@ export default function PrivacyPolicyPage() {
                   className={styles.link}
                 >
                   emailjs.com/legal/privacy-policy
-                </a>.
+                </a>
+                .
               </p>
             </section>
 
@@ -141,8 +165,8 @@ export default function PrivacyPolicyPage() {
                 incorporati nel sito) hanno sede negli Stati Uniti d'America.
                 L'utilizzo di tali servizi può comportare un trasferimento di
                 dati personali al di fuori dello Spazio Economico Europeo,
-                effettuato sulla base delle garanzie previste dagli articoli
-                45 e 46 del GDPR.
+                effettuato sulla base delle garanzie previste dagli articoli 45
+                e 46 del GDPR.
               </p>
               <p>
                 Entrambi i fornitori risultano certificati nell'ambito del{" "}
@@ -153,8 +177,8 @@ export default function PrivacyPolicyPage() {
                   className={styles.link}
                 >
                   EU-U.S. Data Privacy Framework
-                </a>
-                {" "}(decisione di adeguatezza della Commissione Europea del 10
+                </a>{" "}
+                (decisione di adeguatezza della Commissione Europea del 10
                 luglio 2023) e applicano inoltre le Clausole Contrattuali
                 Standard approvate dalla Commissione Europea.
               </p>
@@ -184,7 +208,9 @@ export default function PrivacyPolicyPage() {
                 <li>diritto di limitazione del trattamento;</li>
                 <li>diritto di opposizione al trattamento;</li>
                 <li>diritto alla portabilità dei dati;</li>
-                <li>diritto di revocare il consenso prestato in qualsiasi momento.</li>
+                <li>
+                  diritto di revocare il consenso prestato in qualsiasi momento.
+                </li>
               </ul>
               <p>
                 Per esercitare questi diritti è sufficiente inviare una
@@ -206,7 +232,9 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <div className={styles.backWrap}>
-              <Link to="/" className={styles.back}>{t("back_to_home")}</Link>
+              <Link to="/" className={styles.back}>
+                {t("back_to_home")}
+              </Link>
             </div>
           </article>
         </div>
