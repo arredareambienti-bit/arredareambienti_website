@@ -17,14 +17,12 @@ const TEMPLATE_ID_EN =
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_K;
 
 const EMAIL_TITLES = {
-  it: "Richiesta preventivo – Arredare Ambienti",
-  en: "Quote request – Arredare Ambienti",
+  it: "Richiesta Contatti – Arredare Ambienti",
+  en: "Contact Request – Arredare Ambienti",
 };
 
-
-
-const isValidEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())
-const isValidPhone = v => /^\d{6,15}$/.test(v.replace(/[\s\-+().]/g, ''))
+const isValidEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
+const isValidPhone = (v) => /^\d{6,15}$/.test(v.replace(/[\s\-+().]/g, ""));
 
 export default function Contact() {
   const [ref, inView] = useInView();
